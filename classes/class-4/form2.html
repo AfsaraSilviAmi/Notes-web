@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form2</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        li{
+            padding: 5px;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+     <header>
+        <nav>
+            <h2>Class 4- HTML and CSS</h2>
+            <ul>
+            <li><a href ="../../index.html">GO TO INDEX➡️</a></li> 
+               <li><a href ="index.html">Home</a></li> 
+               <li><a href ="form.html">Form</a></li> 
+               <li><a href ="table.html">Table</a></li>
+               <li><a href ="flex.html">Flex</a></li>  
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+        <h2 style="text-align: center;">Story Telling Contest Form</h2>
+        <form style="border: 1px solid black; border-radius: 30px; text-align: center; background-color: rgb(186, 209, 221); width: 700px; height: fit-content; margin: 10px 25%; padding: 10px;">
+           <label for="story">Write Your Story Here:</label><br>
+           <textarea name="" id="story" cols="80" rows="10"></textarea><br><br>
+           <label for="review">Review the Story:</label>
+           <select name="" id="review">
+            <option value="Excellent">Excellent</option>
+            <option value="Good">Good</option>
+            <option value="Bad">Bad</option>
+           </select><br><br>
+           <input type="submit" value="Submit">
+        </form>
+        </div>
+        <div>
+            <h2>✔️How to make a Form(Radio button main)</h2>
+            <ol>
+                <li>Using input we can select the radio button.</li>
+                <li>We can add the label afterwords</li> 
+                <li>Make sure the <b>for</b> in the <b>label</b> is same as the <b>id</b> in the <b> input field</b>. This associates that input for that label.</li>
+                <li>Now, we want to make it so that we can <b>Select ONLY ONE of the options</b>. In such case the<b> name in the input field for all options MUST BE same</b>.</li>
+                <p><b>PS. Use shortcut li*5 for making several li</b></p>
+            </ol>
+            <form>
+                <p style="font-size: larger;">For Example--</p>
+                <input type="radio" name="Example" id="e1">
+                <label for="e1">Example 1</label>
+                <input type="radio" name="Example" id="e2">
+                <label for="e2">Example 2</label>
+                <input type="radio" name="Example" id="e3">
+                <label for="e3">Example 3</label>
+            </form><br><br>
+            <img src="images/form.png" alt="">
+        </div>
+        <div>
+            <h2>✔️Textarea</h2>
+            <p>Test area is an area that is used to write feedback in a form.</p>
+            <img src="images/textarea.png" alt="">
+        </div>
+    </main>
+</body>
+</html>

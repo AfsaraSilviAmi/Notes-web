@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2nd Class-CSS</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <style>
+        .first{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<header class="header">
+        <h1 style="text-align: center;">2nd Class- CSS Basics</h1>
+</header>
+<body>
+    <div style="background-color:aquamarine; border: 1px solid black; box-shadow: 5px 10px 30px; width:1100px; margin:5px 0px 30px; padding: 0px 10px;">
+        <h2>✔️Header</h2>
+        <p class = "first">First of all, we need <b>display:flex, align-item:center</b> and <b>justify-content: center</b> to make the text exactly at the center of the image. And most importantly we need to add 'background-image:url('your image name and folder');' in the header style file.</p>
+        <img src="Images/header ss1.png" alt="header ss1">
+        <img src="Images/header ss2.png" alt="header ss2">
+    </div>
+    <div style="background-color:darkslategray; color:antiquewhite; border: 4px solid rgb(21, 79, 11); box-shadow: 10px 30px 30px gray; width:1100px; margin:5px 0px 30px; padding: 0px 10px;">
+        <h2>✔️CSS types</h2>
+        <p style = "font-style: italic; background-color: darkslateblue;"> CSS is of 3 types:
+        <ol style = "background-color: darkslateblue; font-family: Arial, Helvetica, sans-serif; font-size: 18px;">
+            <li>Inline (inside of tags. ex-<b style ="color:crimson">&ltp style = "color:red;"&gt</b> )</li>
+            <li>Internal/Embedded (inside header tag using <b>style</b> tag)</li>
+            <li>External(make an external css file and link inside head tag using<b style ="color:crimson"> &ltlink rel="stylesheet" href="Your css file and folder"&gt</b>)</li>  
+            
+        </ol>
+        </p>
+        </div>
+        <div style = "background-color: crimson;border: 10px solid rgb(244, 131, 205); box-shadow: 5px 10px 30px; width:1100px; margin:5px 0px 30px;padding: 0px 10px;">
+        <h2>✔️CSS selectors</h2>
+        <p id="third"> CSS selectors is of 2 types:
+        <ol style = "background-color: blueviolet;">
+            <li>id --&gt # (for a single element)</li>
+            <li>class --&gt . (for multiple elements)</li>
+            
+        </ol>
+        </p>
+        </div>
+        <div style = "background-color: aquamarine;border: 8px solid rgb(106, 137, 187); box-shadow: 5px 10px 30px; width:1100px; margin:5px 0px 30px;padding: 0px 10px;">
+            <h2>✔️Box model</h2>
+            <p style = "background-color: aqua;">First <b>content</b> then <b>padding</b> then <b>border </b>and finally <b>margin.</b></p>
+            <img src ="Images/box model.png" height="300px">
+            <img src="Images/border.png">
+            <p>In the above SS, one can see the <b>border</b> which creates the <b>outer box border</b>, <b>margin</b> helps to create <b>Distance Around the boxes</b> and <b>box shadow </b>to create <b>shadows around the box</b>.<br> <u style="color:crimson">FUN FACT:</u> By putting <b>box-shadow: -5px -10px 30px;</b> we can make shadows face the opposite direction<br><u style="color:crimson">ANOTHER FUN FACT:</u>The margin and border be like <b>margin/border: UP RIGHT DOWN LEFT</b></p> 
+        </div>
+    <div><h2><a href="../../index.html">GO TO INDEX ➡️</a></h2></div> 
+</body>
+</html>

@@ -1,0 +1,22 @@
+header.header{
+    position: relative;
+    background-image: url('../Images/star.jpg');
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    color:antiquewhite;
+    justify-content: center; 
+    
+
+}
+p,ol{
+    font-size: 20px;
+}
+#third{
+    background-color: blueviolet;
+}
+*{
+   
+    border: none;
+}

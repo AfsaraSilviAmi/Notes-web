@@ -1,0 +1,49 @@
+nav{
+    display:flex; /*MUST TO MAKE THE NAVBAR "HOME" STUFF TO GO RIGHT*/
+    background-color: rgb(241, 152, 231);
+    position: fixed;
+    width:100%;
+    top:0;
+}
+nav ul{
+     margin-left: auto; /*MUST TO MAKE THE NAVBAR "HOME" STUFF TO GO RIGHT*/
+     display: flex;
+     padding: 0;
+}
+nav ul li{
+    list-style: none;
+    margin-right: 50px;
+    
+}
+nav li a{
+    text-decoration: none;
+    font-size: larger;
+   
+}
+nav h2{
+    color:rgb(129, 16, 144);
+    font-size: 25px;
+    margin-left: 10px;
+    
+}
+nav li:hover{
+    background-color:rgb(19, 220, 153);
+    border-radius: 10px;
+
+
+}
+main{
+    margin-top: 50px; 
+    padding: 20px;
+}
+p{
+    font-size: larger;
+    margin-left: 10px;
+}
+b{
+    color: darkred;
+}
+img {
+    margin-left: 10px;
+}
+

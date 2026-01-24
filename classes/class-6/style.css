@@ -1,0 +1,17 @@
+header{
+    background-image: url('./images/star.jpg');
+    text-align: center;
+    height:10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1{
+    color:antiquewhite;
+}
+li{
+    margin:3px;
+}
+ol , p{
+    font-size: large;
+}

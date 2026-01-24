@@ -1,0 +1,30 @@
+input{
+    display: none;
+}
+label{
+    font-size: 2rem;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+label:hover{
+    transform: scale(1.2);
+}
+li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+li a{
+    text-decoration: none;
+    color:palevioletred;
+    
+}
+.dropdown_menu{
+    display: none;
+}
+
+#toggle:checked + .dropdown_btn + .dropdown_menu {
+    display: block;
+}
+#toggle-git:checked + .dropdown_btn + .dropdown_menu {
+    display: block;
+}
