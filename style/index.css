@@ -16,7 +16,12 @@ li{
 li a{
     text-decoration: none;
     color:palevioletred;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
     
+}
+li a:hover{
+    transform: scale(1.2);
 }
 .dropdown_menu{
     display: none;
@@ -26,5 +31,14 @@ li a{
     display: block;
 }
 #toggle-git:checked + .dropdown_btn + .dropdown_menu {
+    display: block;
+}
+#toggle-res:checked + .dropdown_btn + .dropdown_menu {
+    display: block;
+}
+#toggle-tail:checked + .dropdown_btn + .dropdown_menu {
+    display: block;
+}
+#toggle-js:checked + .dropdown_btn + .dropdown_menu {
     display: block;
 }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+        <h1>Basic JavaScript</h1>
+        <ul>
+            <li><a href="../../index.html">GO TO INDEX➡️</a></li>
+            <li><a href="./class_13.html">Variables</a></li>
+            <li><a href="./type-conversion.html">Type Conversion</a></li>
+            <li><a href="./data_type.html">Data types</a></li>
+        </ul>
+    </header> 
+    <section>
+        <h2>✔️Types of operators</h2>
+        <ol>
+            <li>Arithmetic operator: (addition: + , substitution: -, multiplication: * , division: / ,    modulus operator: %)</li>
+            <li>Comparison operator: (==, ===, > , < , >=, <=, !=, !==)</li>
+            <li>Logical operator: (&&, ||, !)</li>
+        </ol>
+    </section>
+    <section>
+        <h2>✔️Arithmetic operators</h2>
+        <p>let ict = 85; <br> let bangla = 65; <br> <br> console.log(bangla + ict); <br>console.log(bangla - ict); <br> console.log(bangla * ict); <br> console.log((bangla / ict).toFixed(2)); <br>console.log(13 % 2);</p>
+    </section>
+    <section>
+        <h2>✔️Comparison operators</h2>
+        <p><b>Comparison operators always get boolean output!!!
+</b> <br> <br> let physics = 50; <br>let math = "50"; <br> <br> console.log(physics == math); <b>(checks only value and thus the output will be TRUE even though one is a number and the other is a string)</b> <br>console.log(physics === math); <b>(checks for both value and datatype-- so it's output will be FALSE)</b> <br> <br> let biology = 65; <br>
+let ict = 55;  <br><br>
+console.log(biology > ict); <b>(true)</b> <br>
+console.log(biology>=ict); <b>(true)</b> <br>
+console.log(biology < ict); <b>(false)</b> <br>
+console.log(biology <= ict); <b>(false)</b> <br>
+console.log(biology != ict); <b>(it a loose not equal...that means it DOES NOT check the data type)</b> <br>
+console.log(biology !== ict); <b>(it checks both the data type and value)</b></p>
+    </section>
+
+<section>
+    <h2>✔️Logical operators</h2>
+    <p>
+        <ul>
+            <li>&& operator <b>(All the Conditions need to be TRUE for the OUTPUT to be TRUE, otherwise it's false)</b></li>
+            <li>|| operator <b>(Any one of the Conditions need to be TRUE for the OUTPUT to be TRUE, it's FALSE only when all conditions are FALSE)</b></li>
+            <li>! operator <b>(reverses the value of true or false)(ex--console.log(!isMatured);)</b></li>
+        </ul> 
+    </p>
+</section>
+
+</body>
+</html>

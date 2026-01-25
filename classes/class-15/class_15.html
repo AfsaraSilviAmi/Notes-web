@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <style>
+        html{
+            font-size: 16px;
+        }
+        h1{
+            font-size: 2.35rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+        b{
+            color:crimson;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+    <h1>Array</h1> 
+     <h1><a href="../../index.html">GO TO INDEX➡️</a></h1>
+     </div>
+   <section>
+         <h2>✔️What is Array?</h2>
+         <p>Array is used to store more than one values in a single variable. <br>Example-- <br> <b>let fruits =["apple", "grape", "orange"];</b></p>
+   </section>
+   <section>
+         <h2>✔️Index</h2>
+         <p>Index of an array starts from 0. <br>Example--- <br>
+        <b>let roll =[5, 44, 2, 78] <br>
+        console.log(roll[1]); ---- (output will be 44) ✅<br>roll[2] = 67; --- (here the third element ,that is, 2 is changed to 67)✅</b></p>
+   </section>
+   <section>
+         <h2>✔️Array Length</h2>
+         <p>Array length is used to determine the number od elements in an array. <br>
+        Example--- <br> <b>let roll =[5, 44, 2, 78] <br> console.log(roll.length);----(here the output would be 4)</b>✅</p>
+   </section>
+   <section>
+         <h2>✔️Push</h2>
+         <p>Push is used to insert an element at the end of an array. <br>Example-- <br><b>fruits =["apple", "grape", "orange"]; <br> fruits.push("tomato"); ----(tomato will be inserted at the end of the array fruits) <br>console.log(fruits)</b><br><br>Output:["apple", "grape", "orange","tomato"]</p>
+   </section>
+   <section>
+         <h2>✔️Pop</h2>
+         <p>Pop is used to remove an element from the end of an array. <br>Example-- <br><b>fruits =["apple", "grape", "orange"]; <br> fruits.pop(); ----(orange will be eliminated from the end of the array fruits) <br>console.log(fruits)</b><br><br>Output:["apple", "grape"]</p>
+   </section>
+   <section>
+         <h2>✔️Shift</h2>
+         <p>Shift is used to remove an element from the <b>Start</b> of an array. <br>Example-- <br><b>fruits =["apple", "grape", "orange"]; <br> fruits.shift(); ----(apple will be eliminated as it is the 1st element in the current array) <br>console.log(fruits)</b><br><br>Output:["grape", "orange"]</p>
+   </section>
+   <section>
+         <h2>✔️Unshift</h2>
+         <p>Unshift is used to add an element to the <b>Start</b> of an array. <br>Example-- <br><b>fruits =["apple", "grape", "orange"]; <br> fruits.unshift("mango"); ----(mango will be inserted at the start of the array fruits) <br>console.log(fruits)</b><br><br>Output:["mango","apple","grape", "orange"]</p>
+   </section>
+   <section>
+         <h2>✔️Includes</h2>
+         <p>Includes is used to find an element in the array. If the element exists in the array then it gives the output true otherwise false.<br>Example-- <br><b>fruits =["apple", "grape", "orange"]; <br> fruits.includes("mango");<br>console.log(fruits)</b><br><br>Output: false</p>
+   </section>
+   <section>
+         <h2>✔️indexOf</h2>
+         <p>indexOf is used to find the index of an element in the array. If the element exists in the array then it gives the output as the index number of that element otherwise it gives -1.<br>Example-- <br><b>fruits =["apple", "grape", "orange"]; <br> fruits.indexOf("orange");<br>console.log(fruits)</b><br><br>Output: 2</p>
+   </section>
+   <section>
+         <h2>✔️isArray</h2>
+         <p>isArray is used to determine whether the variable is an array or not.<br>Example-- <br><b>fruits =["apple", "grape", "orange"]; <br> console.log(Array.isArray(fruits))</b><br><br>Output: true</p>
+   </section>
+</body>
+</html>

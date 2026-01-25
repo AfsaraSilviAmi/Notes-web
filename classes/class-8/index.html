@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Gallery</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .container-img{
+            margin-top: 10px;
+            display: grid;
+            gap: 3px;
+            grid-template-columns: repeat(6,1fr);
+            grid-template-rows: repeat(6,200px);
+        }
+        img{
+            width:100%;
+            height:100%;
+        }
+        .big-layout{
+            grid-column: span 6;
+            grid-row: span 2;
+        }
+        .normal{
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        .mid{
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+        @media screen and (max-width:576px) {
+           .container{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        .big-layout, .mid, .normal, .small{
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div>
+            <h2>
+                Responsive Layout
+            </h2>
+        </div>
+        <div>
+            <ul>
+                <li><a href="../../index.html">GO TO INDEX➡️</a></li>
+                <li><a href="./grid.html">Grid</a></li>
+                <li><a href="./template_area.html">Template Area</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container-img">
+        <div class="big-layout">
+            <img src="./images/A.jpg" alt="">
+        </div>
+        <div class="normal">
+            <img src="./images/B.jpg" alt="">
+        </div>
+        <div class="normal">
+            <img src="./images/C.jpg" alt="">
+        </div>
+        <div class="mid">
+            <img src="./images/D.jpg" alt="">
+        </div>
+        <div class="mid">
+            <img src="./images/E.jpg" alt="">
+        </div>
+        <div class="normal">
+            <img src="./images/F.jpg" alt="">
+        </div>
+        <div class="small">
+            <img src="./images/G.jpg" alt="">
+        </div>
+        <div class="small">
+            <img src="./images/G.jpg" alt="">
+        </div>
+        <div class="normal">
+            <img src="./images/I.jpg" alt="">
+        </div>
+        <div class="small">
+            <img src="./images/G.jpg" alt="">
+        </div>
+        <div class="small">
+            <img src="./images/G.jpg" alt="">
+        </div>
+        </div>
+       
+    <section class="notes">
+        <h2>✔️Responsive Gallery</h2>
+        <img src="./images/ss1.png" alt="">
+        <img src="./images/ss2.png" alt="">
+        <img src="./images/ss3.png" alt="">
+        <p>Here the Images are Taken in separate divs and is assigned classes based on the space it would take. P.S. NOT ALL OF THE DIVS ARE SHOWN IN THE SS. <br>In desktop, to make it in a defined layout one has to make the <b>divs grid</b> by writing <b>display:grid</b> on their <b>parent div</b>. And use <b>grid-template-columns</b> and <b>grid-template-rows(if needed)</b> to specify the number of columns and rows. The 1fr determines the fraction of space it will take. We use <b>span</b> on <b>grid-column</b> and <b>grid-row</b>to determine the space it takes.</p>
+    </section>
+    <section class="notes">
+        <h2>✔️Gradient</h2>
+        <img src="./images/ss4.png" alt="">
+        <p>To make a <b>text</b> gradient we MUST use <b>-webkit-background-clip:text</b> and <b>-webkit-text-fill-color:transparent</b>!!!</p>
+    </section>
+</body>
+</html>

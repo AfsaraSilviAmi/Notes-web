@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container-box{
+            color:white;
+             display: grid;
+             gap:20px;
+             grid-template-columns: repeat(4,1fr);
+             grid-template-rows: repeat(3, 200px) 50px 50px;
+             text-align: center;
+             margin-top: 10px;
+             
+        }
+        .box{
+           padding:10px;
+           background-color: grey;
+        }
+        .box1{
+            grid-column: span 1;
+            grid-row: span 5;
+        }
+        .small{
+           grid-column: span 3; 
+           grid-row: span 1;
+        
+        }
+        .red{
+            background-color: palevioletred;
+        }
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header class="navbar">
+        <div>
+            <h2>
+                Responsive Layout
+            </h2>
+        </div>
+        <div>
+            <ul>
+                <li><a href="../../index.html">GO TO INDEX➡️</a></li>
+                <li><a href="./index.html">Images layout</a></li>
+                <li><a href="./template_area.html">Template Area</a></li>
+            </ul>
+        </div>
+    </header>
+<body>
+    <div class="container-box">
+    <div class="box box1">Box-1</div>
+    <div class="box">Box-2</div>
+    <div class="box">Box-3</div>
+    <div class="box">Box-4</div>
+    <div class="box">Box-5</div>
+    <div class="box red">Box-6</div>
+    <div class="box red">Box-7</div>
+    <div class="box">Box-8</div>
+    <div class="box red">Box-9</div>
+    <div class="box red">Box-10</div>
+    <div class="box small">Box-11</div>
+    <div class="box small">Box-12</div>
+    </div>
+</body>
+</html>

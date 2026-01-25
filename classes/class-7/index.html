@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1?</title>
+    <style>
+        .container{
+            margin-top: 0.5%;
+            display:flex;
+        }
+        @media screen and (max-width:576px){
+           .container{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+           }
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../../index.html">GO TO INDEX➡️</a>
+            <a href="index.html">Task1</a>
+            <a href="task2.html">Task2</a>
+            <a href="task3.html">Task4</a>
+            <a href="task4.html">Task5</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="pic">
+            <img src="./images/cat.jpg" alt="">
+        </div>
+        <div class="pic">
+            <img src="./images/bunny.jpg" alt="">
+        </div>
+    </div>
+    <section class="banner">
+         <h2>Class 7 -Responsive</h2>
+    </section>
+    <section>
+        <h2>✔️Display flex and Display Grid</h2>
+        <img src="./images/ss3.png" alt="">
+        <p>Here, we used <b>display:flex</b> to make the images go <b>side by side</b>. And Using <b>Media query</b> we make it <b>display:grid</b> for devices of max-width:576px. <b>display:grid</b> is used to make the images <b>aligned from top to bottom</b>.</p>
+    </section>
+    <section>
+        <img src="./images/ss4.png" alt="">
+        <p>I feel this could have been achieved using <b>nth-child</b> or <b>reverse-column</b>.</p>
+    </section>
+</body>
+</html>

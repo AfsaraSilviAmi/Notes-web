@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task5</title>
+    <style>
+
+        .container{
+            display:flex;
+            margin:1%;
+        }
+        .container div{
+            margin-left:1%;
+        }
+
+        @media screen and (max-width:576px){
+             .container {
+             display: grid;          
+             
+        }
+
+        .container > div:has(img) {
+            order: -1; /* div with image comes first */
+        }
+            
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../../index.html">GO TO INDEX➡️</a>
+            <a href="index.html">Task1</a>
+            <a href="task2.html">Task2</a>
+            <a href="task3.html">Task4</a>
+            <a href="task4.html">Task5</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div>
+            <img src="./images/bunny.jpg" alt="">
+        </div>
+        <div>
+           <h2>Mr.Bunny</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ea explicabo eaque reiciendis dolor autem ab ullam officia, aliquam repellendus nostrum illo, aliquid necessitatibus nobis veniam esse aspernatur dolores sed!</p>
+        </div>
+    </div>
+    <div class="container">
+        <div>
+           <h2>Mr.Dog</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ea explicabo eaque reiciendis dolor autem ab ullam officia, aliquam repellendus nostrum illo, aliquid necessitatibus nobis veniam esse aspernatur dolores sed!</p>
+        </div>
+        <div>
+            <img src="./images/dog.jpg" alt="">
+        </div>
+        
+    </div>
+    <div class="container">
+        <div>
+            <img src="./images/ss2.png" alt="">
+        </div>
+        <div>
+           <h2>✔️My Container</h2>
+           <p>Just html code to see how my containers are totally separated.</p>
+        </div> 
+        </div>
+    <div class="container">
+        <div>
+           <h2>✔️How to make the image come top on Mobile Even if it is in the 2nd child div</h2>
+           <p>The parent div .container. And it has two child divs. one has heading nad paragraph and other has an image. On phone screen it will definitely come in first Even if it's in the 2nd div!</p>
+        </div>
+        <div>
+            <img src="./images/ss1.png" alt="">
+        </div>
+        
+    </div>
+    
+</body>
+</html>
