@@ -97,6 +97,17 @@ footer{
         "advertise"
         'footer';
     }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar ul{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    img{
+        width:100%;
+    }
 }
 @media screen and (min-width:576px) and (max-width:992px){
     .container{
@@ -108,5 +119,8 @@ footer{
     ul{
         display: flex;
         justify-content: space-around;
+    }
+    img{
+        width:100%;
     }
 }

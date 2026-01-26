@@ -20,6 +20,11 @@
         b{
             color:crimson;
         }
+        @media screen and (max-width:576px) {
+            p{
+                  font-size: 1.1rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -69,6 +74,10 @@
    <section>
          <h2>✔️isArray</h2>
          <p>isArray is used to determine whether the variable is an array or not.<br>Example-- <br><b>fruits =["apple", "grape", "orange"]; <br> console.log(Array.isArray(fruits))</b><br><br>Output: true</p>
+   </section>
+   <section>
+         <h2>✔️concat</h2>
+         <p>concat is used to <b>combine arrays</b>.<br>Example-- <br><b>fruits =["apple", "grape", "orange"]; <br> let roll =[5, 44, 2, 78] <br>  console.log(fruits.concat(roll))</b><br><br>Output: ["apple", "grape", "orange",5, 44, 2, 78]</p>
    </section>
 </body>
 </html>

@@ -19,11 +19,20 @@
              display: grid;          
              
         }
+        img{
+            width:95%;
+        }
 
         .container > div:has(img) {
             order: -1; /* div with image comes first */
         }
             
+        }
+        @media screen and (min-width:576px) and (max-width:992px){
+        .ss{
+            width:100%;
+        }
+        
         }
     </style>
     <link rel="stylesheet" href="style.css">
@@ -60,7 +69,7 @@
     </div>
     <div class="container">
         <div>
-            <img src="./images/ss2.png" alt="">
+            <img src="./images/ss2.png" alt="" class="ss">
         </div>
         <div>
            <h2>✔️My Container</h2>
@@ -73,7 +82,7 @@
            <p>The parent div .container. And it has two child divs. one has heading nad paragraph and other has an image. On phone screen it will definitely come in first Even if it's in the 2nd div!</p>
         </div>
         <div>
-            <img src="./images/ss1.png" alt="">
+            <img src="./images/ss1.png" alt="" class="ss">
         </div>
         
     </div>

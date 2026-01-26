@@ -1,3 +1,4 @@
+
 header{
     display:flex;
     justify-content: space-between;
@@ -35,3 +36,37 @@ header ul li a:hover{
         b{
             color: crimson;
         }
+
+@media screen and (max-width:576px) {
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    header h1{
+        text-align: center;
+    }
+    header ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap:2%;
+    }
+    p, li {
+    font-size: 1.1rem;
+}
+    
+}
+@media screen and (min-width:576px) and (max-width:992px) {
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    header h1{
+        text-align: center;
+    }
+    header ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap:2%;
+    }
+    
+}

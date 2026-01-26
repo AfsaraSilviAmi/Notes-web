@@ -42,4 +42,9 @@ nav{
             color:white;
             font-size: 4rem;
         }
+        @media screen and (max-width:576px){
+            .banner h2{
+            font-size: 2rem;
+           }
+        }
        
