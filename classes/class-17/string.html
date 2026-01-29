@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Strings & Objects</h1>
+            <ul>
+                <li><a href="../../index.html">GO TO INDEX➡️</a></li>
+                <li><a href="./objects.html">Objects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 style="text-align: center;"><u>String</u></h1>
+    <section>
+        <h2>✔️Ways to Declare a string</h2>
+        <p><ul><li>Single quote:<b> </b></li>
+            <li>Double quote: <b>const name = "Silvi";</b></li>
+            <li>Backtick: <b>const name = `Ami`;</b></li>
+            <li>new String(): <b>const name = new String('MEE');</b> (But it's typeof is <b>object</b> instead of string).</li>
+        </ul></p>
+    </section>
+    <section>
+        <h2>✔️<i>String.length</i></h2>
+        <p>This is used to check the <b>size of the string (including the white spaces)</b>. Example--- <br><br><b>const str = "String can be confusing";<br>console.log(str.length);</b> <br><br>Output: 23</p>
+    </section>
+    <section>
+        <h2>✔️Accessing specific character by index</h2>
+        <p>It is possible to access certain character by <b>Index</b> but it is <b>NOT POSSIBLE TO CHANGE</b> any character by using index. Use <b>replace</b> instead. Example--<br><br><b>const str = "Ami"; <br>console.log(str[0]);
+</b><br><br>Output:A</p>
+    </section>
+    <section>
+        <h2>✔️Comparing two Strings <i>(toLowerCase/toUpperCase)</i></h2>
+        <p>Strings are <b>Case Sensitive</b>. So, <b>Ami</b> and <b>ami</b> is <b>NOT same</b>. In order to compare two strings, they are to be <b>converted</b> to <b>uppercase/lowercase</b> first. Example-- <br><br><b>let str = "Ami";<br>let str2 = "ami";<br>console.log(str.toLowerCase() === str2.toLowerCase());</b><br><br>Output: true <br><br>P.S. same can be done for upper case--  <b>   console.log(str.toUpperCase() === str2.toUpperCase());</b></p>
+    </section>
+    <section>
+        <h2>✔️<i>trim</i></h2>
+        <p>Strings are also <b>Space Sensitive</b>. While comparing strings, it's a good practice to use <b>trim</b> as well. <b>Trim</b> is used to <b>remove space from beginning and the end</b>. But it can <b>NOT remove space</b> from the <b>middle</b>. Example-- <br><br><b>let str = "  ami";<br>let str2 = "ami   ";<br>console.log(str.trim() === str2.trim());</b><br><br>Output: true</p>
+    </section>
+    <section>
+        <h2>✔️<i>slice</i></h2>
+        <p>Slice is used to <b>slice a string</b>. <br><br>Syntax: <b>slice(start index, end after)</b> .Example-- <br><br><b>let me = "I love Anime";<br>console.log(me.slice(7, 12));</b><br><br>OR,<br><br><b>console.log(me.slice(7));</b> ---(this means from the 7th index to the end)<br><br>Output: Anime</p>
+    </section>
+    <section>
+        <h2>✔️<i>includes</i></h2>
+        <p>Includes checks if a <b> specific portion</b> of the string exists in that string or not. Example-- <br><br><b>let me = "I love Anime";<br>console.log(me.includes("Anime"));</b><br><br>Output: true</p>
+    </section>
+    <section>
+        <h2>✔️<i>concat</i></h2>
+        <p>Concat is to <b> join two strings together</b>. Example-- <br><br><b>let str = "This is my notes." <br>let str2 ="I hope I don't forget all this."<br>let newStr = str.concat(str2);<br>
+console.log(newStr);</b><br><br>Output: This is my notes.I hope I don't forget all this.</p>
+    </section>
+    <section>
+        <h2>✔️<i>replace</i></h2>
+        <p>Replace is to <b> replace specific portion of the string with a new letter/word.</b>. Example-- <br><br><b>let me = "I love Anime";<br>console.log(me.replace("Anime","Coding"));</b><br><br>Output: I love Coding</p>
+    </section>
+    <section>
+        <h2>✔️<i>split</i></h2>
+        <p>Split is very <b>useful in reversing string</b>. And ✅<b>Split </b>is a way to <b>CONVERT STRING TO AN ARRAY✅</b>.Example--- <br><br><b>let str1 = "Converts String to Array";<br>
+let strArr = str1.split(" ");<br>console.log(strArr);</b><br><br>Output: [ 'Converts', 'String', 'to', 'Array' ] <br><br>P.S. <b>split() ---> (converts the whole string to a single element in an array) <br>split("")--->(converts the every letter of the string into elements in an array) <br>split(" ")--->(converts each word in a string in an element of an array)</b></p>
+    </section>
+    <section>
+        <h2>✔️<i>join</i></h2>
+        <p><b>✅Join Combines all elements in an ARRAY into a single STRING✅</b>. Also useful in reversing a string by converting the reversed array into a string!</p>
+    </section>
+    <section>
+        <h2>✔️Reversing a String <i>(split + replace + join)</i></h2>
+        <p>Reverse is used to <b>reverse an array</b> since <b>Strings can not be directly modified</b>.Example--- <br><br><b>let str1 = "We need split, replace and join to reverse a string"; <br>
+let strArr = str1.split(" ");</b> ---('split' converts the string into array of words) <br><b> let revArr = strArr.reverse();</b> ---('reverse' reverses the sequence of arrays) <br> <b>let revStr = revArr.join(" ");</b> ---('join' converts the all the elements of arrays into a single string) <br><b>console.log(revStr);</b><br><br>OR, <br><br>Shortcut: <b>let revStr = str1.split(" ").reverse().join(" ");<br>console.log(revStr);</b><br><br>Output:string a reverse to join and replace split, need We</p>
+    </section>
+    <section>
+        <h2>✔️Counting a Specific letter</h2>
+       <img src="./images/count.png" alt="">
+       <p>Output: 8</p>
+    </section>
+    <section>
+        <h2>✔️Making sure an array of letters are included in the string or not</h2>
+       <img src="./images/vowels.png" alt=""><p>OR,</p>
+       <img src="./images/vowels2.png" alt="">
+       <p>Output: false</p>
+    </section>
+    <section>
+        <h2>✔️<i>replaceAll</i></h2>
+        <p>replaceAll is used to replace every letter of the string that we want to change and not just the first one.</p>
+        <img src="./images/replace.png" alt="">
+       <p>Output: Today is Y-mas daY y-y and also Eid. yooo.</p>
+    </section>
+    <section>
+        <h2>✔️Making Every First letter Capital</h2>
+        <img src="./images/capital.png" alt="">
+        <p>At first the String in <b>converted</b> into an <b>array</b> using <b>split</b>. The result variable is an empty space to store the string. <b>word[i][0]</b> is used to take every elements/words <b>first letter</b> and <b>toUpperCase</b> is used to <b>convert it into capital</b>. The <b>slice(1)</b> is <b>rest of the letters in the words except the 1st one</b>. And we store all of that in the result. The <b>if condition</b> is used to <b>create space after every word</b>.</p>
+    </section>
+
+
+
+
+</body>
+</html>

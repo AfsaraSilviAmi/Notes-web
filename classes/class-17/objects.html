@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Strings & Objects</h1>
+            <ul>
+                <li><a href="../../index.html">GO TO INDEX➡️</a></li>
+                <li><a href="./string.html">String</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 style="text-align: center;"><u>Objects</u></h1>
+    <section>
+        <h2>✔️Objects</h2>
+        <p>Objects are non primitive data type. Example--- <br><br><b>let bike = { <br>
+  color: "Black", <br> brand: "Honda", <br>  isMeterDigital: true, <br>
+  advantages: ["less milage", "High speed", "Low configuration"], <br>
+  battery: { <br>
+    color: "black", <br>
+    durability: "strong", <br>
+    warranty: "2 year", <br>
+  } <br>
+};</b><br><br>Here, <b>color,brand etc</b> are <b>keys/properties</b> and <b>Black, Honda etc</b> are <b>values</b>.</p>
+</section>
+    <section>
+        <h2>✔️Accessing a specific property or key </h2>
+        <p><ol>
+            <li>dot notation . Example-- <b>console.log(bike.color);</b> 
+            </li>
+            <li>bracket  notation [ ] Example-- <b>console.log(bike[color]);</b></li>
+        </ol></p>
+        <p>Output:Black</p>
+        <img src="./images/access.png" alt=""><br><br>
+        <img src="./images/nested.png" alt="">
+</section>
+    <section>
+        <h2>✔️Update</h2>
+        <p>Updating an object is possible. Example --- <br><br><b>bike.color = "Lavender"; <br> console.log(bike);</b></p>
+        <img src="./images/update.png" alt="">
+       
+</section>
+    <section>
+        <h2>✔️Delete</h2>
+        <p>Using <b>delete</b> a key and it's value is possible. Example --- <br><br><b> delete bike.brand; <br> console.log(bike);</b></p>    
+       
+</section>
+    <section>
+        <h2>✔️Loop iteration Over Object</h2>
+        <img src="./images/iteration.png" alt="">
+        <p>Output:</p>
+        <img src="./images/output1.png" alt="">
+        <p>P.S. We use <b>✅Object.keys(objectName)</b> to find the <b>keys/properties</b>.✅ <br>And <b>Object.values(objectName)</b> to find the <b>values</b>.</p>
+</section>
+</section>
+    <section>
+        <h2>✔️<i>for in</i>  loop (easier)</h2>
+        <img src="./images/for in.png" alt="">
+        <p>Output:</p>
+        <img src="./images/output2.png" alt="">
+</section>
+<section>
+    <h2>✔️Counting properties</h2>
+    <img src="./images/countob.png" alt="">
+</section>
+
+</body>
+</html>
