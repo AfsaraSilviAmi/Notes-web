@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Loops and Methods</title>
+    <style>
+        html{
+            font-size: 16px;
+        }
+        h1{
+            font-size: 2.5rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+        p,li{
+            font-size: 1.5rem;
+        }
+        b{
+            color:crimson;
+        }
+        i{
+            color:darkslateblue
+        }
+        header{
+            text-align: center;
+        }
+        @media screen and (max-width:576px){
+            img{
+                width:98%;
+            }
+            
+             h1{
+            font-size: 2rem;
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+            p,li{
+            font-size: 1rem;
+        }
+        }
+        
+        @media screen and (min-width:576px) and (max-width:992px) {
+            img{
+                width:98%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Array Loops and Methods</h1>
+        <h2><a href="../../index.html">GO TO INDEX➡️</a></h2>
+    </header>
+    <section>
+         <h2>✔️Traditional for loop for Array</h2>
+         <p><b>array.length</b> is necessary for the looping condition in this case. <br> <br>Syntax: <b>for (let i = 0; i < array.length; i += 1) { <br> console.log(array[i]);<br>}</b></p>
+    </section>
+    <section>
+         <h2>✔️<i>for of </i> loop for Array</h2>
+         <p>Syntax: <b>for (let number of array) {<br> console.log(number);<br>}</b></p>
+    </section>
+    <section>
+         <h2>✔️Methods of Array✨✨✨✨</h2>
+         <p>The methods of array are: <b><br>✅includes <br>✅isArray <br>✅indexOf <br>✅reverse <br>✅join</b></p>
+    </section>
+    <section>
+         <h2>✔️<i>includes</i></h2>
+         <p><b>includes</b> checks a <b>value exists or not</b>. Example--- <br><br><b>let arr2 = [5, 10, 15];<br>console.log(arr2.includes(100));</b> <br> <br>Output: false</p>
+    </section>
+    <section>
+         <h2>✔️<i>Array.isArray()</i></h2>
+         <p><b>Array.isArray(variableName)</b> checks if a<b>variable is a array or not</b>. Example--- <br><br><b>let str = "Ami";<br>console.log(Array.isArray(str));</b> <br> <br>Output: false</p>
+    </section>
+    <section>
+         <h2>✔️<i>indexOf</i></h2>
+         <p><b>indexOf</b> is used to <b>find index number of an element</b>. Example--- <br><br><b>let arr = ["Nanase", "Mitsuki", "Iori"];<br>console.log(arr.indexOf("Mitsuki"));</b> <br> <br>Output: true</p>
+    </section>
+    <section>
+         <h2>✔️<i>reverse</i></h2>
+         <p><b>reverse</b> is used to <b>reverse the elements</b> of an <b>array</b>. Example--- <br><br><b>let arr = ["Nanase", "Mitsuki", "Iori"];<br>console.log(arr.reverse());</b> <br> <br>Output: [ 'Iori', 'Mitsuki', 'Nanase' ]</p>
+    </section>
+    <section>
+         <h2>✔️<i>join</i></h2>
+         <p><b>✅join</b> is used to <b>CONVERT</b> an <b>ARRAY</b> into a <b>STRING✅</b>. Example--- <br><br><b>let arr = ["Nanase", "Mitsuki", "Iori"];<br>let str = arr.join(" "); <br> console.log(str);</b> <br> <br>Output: Nanase Mitsuki Iori</p>
+    </section>
+    <section>
+         <h2>✔️Reversing array WITHOUT using reverse method</h2>
+         <p>Here, we took a <b>result = []</b>(empty array) to <b>store the reverse value</b>. <br>Then, in the for loop we have a <b>i = colors.length -1</b> which takes the <b>last element </b>of the array as <b>initial value</b>. <br> Then, <b>i>=0</b> to make it reach <b>the first element</b> of the array. Using <b>i--</b> we decrement it. <br>Then, we  <b>push</b> the <b>elements one by one</b> in the <b>result array</b>, that is, <b>result.push(colors[i])</b>. <br>Finally, the result should be printed <b>outside</b> the <b>for loop</b>.</p>
+         <img src="./images/reverse.png" alt="">
+    </section>
+    <section>
+         <h2>✔️Reversing <i>(split + reverse + join)</i></h2>
+         <p>Here, <b>split </b>is used to <b>convert the string into array</b>. The <b>reverse</b> method is used to reverse the array. And the <b>join</b> method is used to <b>convert the array into string</b>.</p>
+         <img src="./images/reverse2.png" alt="">
+    </section>
+    <section>
+         <h2>✔️Getting even numbers from an array using <i> for</i> looping technique</h2>
+         <img src="./images/even.png" alt="">
+    </section>
+    <section>
+         <h2>✔️Concatenating using <i>for of</i> loop</h2>
+         <img src="./images/concat.png" alt="">
+    </section>
+    <section>
+         <h2>✔️Copy array using <i>slice</i> without changing the original</h2>
+         <img src="./images/conact.png" alt="">
+    </section>
+    <section>
+         <h2>✔️Printing Objects in an Array</h2>
+         <img src="./images/print.png" alt="">
+    </section>
+    <section>
+         <h2>✔️Accessing and changing in 2D array</h2>
+         <img src="./images/2d.png" alt="">
+    </section>
+    
+</body>
+</html>
