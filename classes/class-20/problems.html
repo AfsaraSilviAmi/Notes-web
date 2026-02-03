@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Coding Problems Part-1</title>
+    <style>
+        html{
+            font-size: 16px;
+        }
+        h1{
+            font-size: 2.5rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+        p,li{
+            font-size: 1.5rem;
+        }
+        b{
+            color:crimson;
+        }
+        i{
+            color:darkslateblue
+        }
+        header{
+            text-align: center;
+        }
+        .big-img{
+            width: 95%;
+        }
+        
+        @media screen and (max-width:576px){
+            img{
+                width:98%;
+            }
+            
+             h1{
+            font-size: 2rem;
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+            p,li{
+            font-size: 1rem;
+        }
+        }
+        
+        @media screen and (min-width:576px) and (max-width:992px) {
+            img{
+                width:98%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Some Simple JS Coding Problems</h1>
+        <h2><a href="../../index.html">GO TO INDEX➡️</a></h2>
+    </header>
+    <section>
+        <h2>✔️Unit conversion (inch to feet)</h2>
+        <p>Used <b>%(modulus)</b> to get the remainder/<b>inches</b>.</p>
+        <img src="./images/inch.png" alt="">
+    </section>
+    <section>
+        <h2>✔️Unit conversion (miles to kilometer and vice-versa)</h2>
+        <img src="./images/miles.png" alt="">
+    </section>
+    <section>
+        <h2>✔️Unit conversion (celsius to fahrenheit)</h2>
+        <p>The celsius to fahrenheit formula is ----<b>fahrenheit = (celsius*9/5)+32</b>!!✅<br>The fahrenheit to celsius formula is ----<b>celsius = (fahrenheit-32)*5/9</b>!!✅</p>
+        <img src="./images/celsius.png" alt="">
+    </section>
+    <section>
+        <h2>✔️Leap Year</h2>
+        <p>Not all years which gives (year % 4===0) is a leap year. So, we have to check at least 2 conditions for it to be a <b>leap year</b>---------<br>1. The year which <b>doesn't give remainder 0</b> when divided by <b>100</b> AND the year which gives a <b>remainder 0</b> when divided by <b>4</b>. <br>2. And the Year should give a <b>remainder 0</b> when divided by <b>400</b>.</p>
+        <img src="./images/leap.png" alt="">
+    </section>
+    <section>
+        <h2>✔️Averaging only Even numbers from an array</h2>
+        <p>1. First of all, we need to initialize an <b>empty array</b> to <b>store</b> the <b>even arrays we get from </b> the <b>for of</b> loop. <br>2. We used a <b>for of</b> loop to <b>separate the elements into singular ones</b>. <br>3. Then, we used a <b>if condition</b> to find the <b>even numbers</b>. And <b>push those even numbers</b> into the <b>empty array</b>. <br>4. Out of that for of loop, we initialize a <b>sum</b> variable. <br> 5. Then, we take another <b>for of</b> loop and <b>sum the even numbers</b>. After summing, we find the <b>average</b> by <b>dividing the sum with array.length</b>.</p>
+        <img src="./images/even-avg.png" alt="">
+    </section>
+    <section>
+        <h2>✔️No Duplicates Strings</h2>
+        <p>1. First of all, we take an <b>empty array (uniq = [])</b>. <br>2. Then, we take a <b>for of</b> loop to separate the elements. <br>3. Then, by using the <b>if condition</b> and <b>includes</b> we make sure the strings are not duplicate <b>if(uniq.includes(nam)==false)</b>.</p>
+        <img src="./images/no-dup.png" alt="">
+    </section>
+    <section>
+        <h2>✔️Finding how many Duplicates exists for a specified number</h2>
+        <img src="./images/no-dup2.png" alt="" class="big-img">
+    </section>
+    <section>
+        <h2>✔️Finding the Longest Word in a String</h2>
+        <p>1. First of all, we need to <b>split</b> the string into singular words. <br>2. Then, we start from the <b>first array (result = arr[0])</b>. <br>3.Then using <b>for</b> loop we go through the end of the array. And using the <b>if condition </b>and <b>length</b> we compare the words <b>if(arr[i].length>result.length)</b>, we can say, <b>result = arr[i]</b>.</p>
+        <img src="./images/long.png" alt="">
+    </section>
+    <section>
+        <h2>✔️Count the number of vowels in the string</h2>
+        <p>1.<b> let letters = str.toLowerCase().split("");</b> ------ we <b>split</b> the string into <b>individual letters</b> and make sure it's also converted <b>to lower case</b>. <br>2. After using <b>for of</b> loop, <b>if(vowel.includes(letter))</b> ---- it makes sure if the vowel array included in the letter.</p>
+        <img src="./images/count-vowel.png" alt="">
+    </section>
+    <section>
+        <h2>✔️Random Numbers from 10 to 20</h2>
+        <p>To make a <b>random number </b>we need <b>Math.random</b>. But not to get 0.2 or something we need to <b>multiply by 10</b> to get any random number from <b>1 to 10</b>. <br> <br>Here, we need to get any random number from 10 to 20 specifically. So we need to multiply it by <b>(max-value - min-value +1)</b> and +10 to make it not 0.2 or something. Also added <b>round function</b> to get a <b>round value</b> and not a fraction. -------<b> Math.round(Math.random()*(20-10+1))+10</b>.</p>
+        <img src="./images/random-num.png" alt="">
+    </section>
+    <section>
+        <h2>✔️Swapping Numbers</h2>
+        <p>For swapping values we need a <b>temp</b>. First of all, we keep the value of <b>a</b> in  <b>temp</b>. Then we keep the value of <b>b</b> in the then <b>empty a</b>. Now, <b>b is empty</b>. So, we put the <b>temp</b> which has <b>a's value</b> in the <b>empty b</b>. Thus, swapping is done. And to <b>return both values</b> we need to <b>return [a,b]</b>.</p>
+        <img src="./images/swap.png" alt="">
+    </section>
+    
+    
+     
+    Math.min, abs, round, ceil, floor   
+
+    new date()
+</body>
+</html>
