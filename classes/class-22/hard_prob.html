@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceptual Session JS Coding Problems</title>
+    <style>
+        html{
+            font-size: 16px;
+        }
+        h1{
+            font-size: 2.5rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+        p,li{
+            font-size: 1.5rem;
+        }
+        b{
+            color:crimson;
+        }
+        i{
+            color:darkslateblue
+        }
+        header{
+            text-align: center;
+        }
+        .big-img{
+            width: 95%;
+        }
+        
+        @media screen and (max-width:576px){
+            img{
+                width:98%;
+            }
+            
+             h1{
+            font-size: 2rem;
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+            p,li{
+            font-size: 1rem;
+        }
+        }
+        
+        @media screen and (min-width:576px) and (max-width:992px) {
+            img{
+                width:98%;
+            }
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <h1>Conceptual Session JS Coding Problems</h1>
+        <h2><a href="../../index.html">GO TO INDEX➡️</a></h2>
+    </header>
+    <section><h2>✔️Find the Word Frequency and Return as Object</h2>
+        <p>1. At first, in function, we <b>split()</b> the <b>string into array</b>. <br>2. Then used <b>toLowerCase()</b> method. So, that cases are ignored. <br>3. Then used <b>for of</b> loop to go through the elements one by one. <br>4. The <b>count = {}</b> is an <b>empty object</b> where all the <b>result/word counts</b> will be <b>stored</b>. <br>5. Then we used <b>count.hasOwnProperty(word)</b> in <b>if condition</b>. It checks the <b>words stored in count has the same property name or not</b>. <br>6. If it has the same property, we make <b>count[word]++</b>. Here, <b>count</b> is the <b>object</b> and <b>word</b> is the <b>key/property</b>. So, <b>count[word]</b> is a way to access the <b>value</b>. <br>7. Else, the count[word] = 1. <br>8. And by <b>returning the count</b> we get the desired output.</p>
+    <img src="./images/word_frequency_count.png" alt="" class="big-img">
+    </section>
+    <section><h2>✔️Student Mark Analyzer (find total, average marks, highest subject and lowest subject from an Object input to an Object output)</h2>
+        <p>1. First we use <b>for in</b> loop for going through the object input. <br>2. Then, we sum ---- <b>sum = sum + marksObj[mark];</b> Here, <b>marksObj</b> is the <b>object</b> and <b>mark</b> is the <b>key/property</b>. So, <b>marksObj[mark]</b> is the way to access the <b>values</b>. <br>3. Then we average out of for in loop ---- <b>let average = sum/Object.keys(marksObj).length;</b>. Since, we <b>Can not</b> use <b>length method on Objects directly</b> we have use <b>Object.keys(marksObj)</b> that brings out the key of the object. <br>4. To get the highest and lowest subject ---- at first we initialize highest(value) and lowest(value) to -Infinity and Infinity respectively. Then highSub(key) and lowSub(key) to null. <br>5. Then in for in loop we make the condition---- <b>marksObj[mark]>highest</b> and <b>marksObj[mark]&ltlowest </b>. <br>6.We return the values as <b>objects</b>.</p>
+        <img src="./images/student_mark.png" alt="" class="big-img">
+    </section>
+    <section><h2>✔️Password Validation Checking</h2>
+        <img src="./images/password_validation.png" alt="">
+    </section>
+    <section><h2>✔️Shopping Bill Calculation</h2>
+        <img src="./images/shopping_bill.png" alt="" class="big-img">
+    </section>
+    <section><h2>✔️Removing Duplicates</h2>
+        <img src="./images/removeDup.png" alt="" class="big-img">
+    </section>
+    <section><h2>✔️Finding Strings with Prefixes in Phone book</h2>
+        <p><b>startsWith()</b> is a method that is used to find <b>prefixes</b> in <b>string</b>.</p>
+        <img src="./images/phonebook.png" alt="">
+    </section>
+    <section><h2>✔️Finding Characters excluding spaces, Words, Vowels and Consonants</h2>
+        <img src="./images/vowel_consonants.png" alt="" class="big-img">
+    </section>
+</body>
+</html>
