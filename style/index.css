@@ -42,3 +42,6 @@ li a:hover{
 #toggle-js:checked + .dropdown_btn + .dropdown_menu {
     display: block;
 }
+#toggle-dom:checked + .dropdown_btn + .dropdown_menu {
+    display: block;
+}

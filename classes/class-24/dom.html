@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to DOM</title>
+    <style>
+        html{
+            font-size: 16px;
+        }
+        h1{
+            font-size: 2.5rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+        p,li{
+            font-size: 1.5rem;
+        }
+        
+        ol{
+            list-style: none;
+        }
+        b{
+            color:crimson;
+        }
+        i{
+            color:darkslateblue
+        }
+        header{
+            text-align: center;
+        }
+        .big-img{
+            width: 95%;
+        }
+        
+        @media screen and (max-width:576px){
+            img{
+                width:98%;
+            }
+            
+             h1{
+            font-size: 2rem;
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+            p,li{
+            font-size: 1rem;
+        }
+        }
+        
+        @media screen and (min-width:576px) and (max-width:992px) {
+            img{
+                width:98%;
+            }
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <h1>Tour of DOM</h1>
+        <h2><a href="../../index.html">GO TO INDEX➡️</a></h2>
+    </header>
+    <section>
+        <h2>✔️DOM(Document Object Model)</h2>
+        <p>It treats the HTML like a <b>tree of objects</b> that <b>JS can access and change</b>.</p>
+    </section>
+    <section>
+        <h2>✔️Selecting Elements</h2>
+        <ol>
+            <li><h3>✅<u>getElementById():</u></h3>
+                <p>Selects <b>ONE</b> element by <b>Id</b>. And <b>returns</b> a <b>single element</b>. Example--- <br> <br> <u>html:</u> <br> <b>&ltp id = "demo"&gtSome Text&lt/p&gt</b> <br><br><u>js:</u> <br><b>let p = document.getElementById("demo");</b></p>
+            </li>
+            <li><h3>✅<u>getElementsByClassName():</u> </h3>
+                <p>Selects <b>multiple</b> elements by <b>class</b>. And <b>returns HTML collection</b>. Example--- <br> <br> <u>html:</u> <br> <b>&ltp class= "hello"&gtHello World&lt/p&gt <br> &ltp class = "hello"&gtHello Universe&lt/p&gt</b> <br><br><u>js:</u> <br><b>let words = document.getElementsByClassName("hello");</b></p>
+            </li>
+            <li><h3>✅<u>getElementsByTagName():</u>
+               </h3>
+                <p>Selects elements by <b>tag Name</b>. And <b>returns HTML collection</b> or <b>multiple elements</b>. Example--- <br> <br> <u>html:</u> <br> <b>&ltp&gtOne&lt/p&gt <br> &ltp&gtTwo&lt/p&gt</b> <br><br><u>js:</u> <br><b>let p = document.getElementsByTagName("p");</b></p>
+            </li>
+            <li><h3>✅<u>querySelector():</u></h3>
+                <p>Selects only <b>first match</b>. And <b>returns</b> a <b>single element</b>. Example--- <br> <br> <u>js:</u> <br><b>document.querySelector(".hello");</b></p>
+            </li>
+            <li><h3>✅<u>querySelectorAll():</u> </h3>
+                <p>Selects <b>all matches</b>. And <b>returns</b> a <b>Node List</b>. Example--- <br> <br> <u>js:</u> <br><b>document.querySelectorAll(".hello");</b></p>
+            </li>
+        </ol>
+    </section>
+    <section>
+        <h2>✔️NodeList Vs HTMLCollection</h2>
+        <img src="./images/nodelist vs htmlcollection.png" alt="" style="border: 1px solid rgba(0, 0, 0, 0.219)">
+    </section>
+    <section>
+        <h2>✔️Changing Content</h2>
+       <ol>
+        <li><h3>✅<u>innerText:</u> </h3>
+            <p><b>Changes visible text</b> only. Example--- <br><br> <u>js:</u> <br><b>p.innerText = "New Text";</b></p>
+        </li>
+        <li><h3>✅<u>innerHTML:</u> </h3>
+            <p><b>Changes HTML inside</b>. Example--- <br><br> <u>js:</u> <br><b>section.innerText = "&ltb&gtBold&lt/b&gt";</b></p>
+        </li>
+       </ol>
+    </section>
+     <section>
+        <h2>✔️Attributes</h2>
+        <ol>
+             <li><h3>✅<u>getAttribute():</u></h3>
+                <u>html:</u> <br> <b>&ltimg id ="img" src ="pic.png"&gt</b> <br><br><u>js:</u> <br><b>document.getElementById("img").getAttribute("src");</b></p>
+            </li> 
+             <li><h3>✅<u>setAttribute():</u></h3>
+                <u>js:</u> <br><b>img.setAttribute("src", "new.jpg");</b></p>
+            </li> 
+        </ol>
+     </section>
+     <section>
+        <h2>✔️classList</h2>
+        <ol>
+            <li><h3>✅<u>classList.add():</u></h3>
+                <p><u>js:</u><br><b>section.classList.add("bold");</b></p>
+            </li>
+        </ol>
+     </section> 
+     <section>
+        <h2>✔️Example of (childNodes, createElement, appendChild, parentNode)</h2>
+        <p><u>html:</u></p>
+        <img src="./images/html.png" alt="">
+        <p><u>js:</u></p>
+        <img src="./images/js.png" alt="">
+     </section> 
+</body>
+</html>
