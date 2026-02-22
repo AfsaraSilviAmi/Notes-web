@@ -30,9 +30,7 @@
         header{
             text-align: center;
         }
-        .big-img{
-            width: 95%;
-        }
+        
         
         @media screen and (max-width:576px){
             img{
@@ -80,9 +78,9 @@
                 <p>Selects elements by <b>tag Name</b>. And <b>returns HTML collection</b> or <b>multiple elements</b>. Example--- <br> <br> <u>html:</u> <br> <b>&ltp&gtOne&lt/p&gt <br> &ltp&gtTwo&lt/p&gt</b> <br><br><u>js:</u> <br><b>let p = document.getElementsByTagName("p");</b></p>
             </li>
             <li><h3>✅<u>querySelector():</u></h3>
-                <p>Selects only <b>first match</b>. And <b>returns</b> a <b>single element</b>. Example--- <br> <br> <u>js:</u> <br><b>document.querySelector(".hello");</b></p>
+                <p>Selects only <b>first match</b> in case of <b>classes</b>. And <b>returns</b> a <b>single element</b>. For <b>querySelector</b> it is better to use it for <b>id</b> but it can be used for <b>classes</b> as well but it will only <b>picks the 1st element/match</b>. Example--- <br> <br> <u>js:</u> <br><b>document.querySelector(".hello");</b></p>
             </li>
-            <li><h3>✅<u>querySelectorAll():</u> </h3>
+            <li><h3>✅<u>querySelectorAll():</u> </h3> 
                 <p>Selects <b>all matches</b>. And <b>returns</b> a <b>Node List</b>. Example--- <br> <br> <u>js:</u> <br><b>document.querySelectorAll(".hello");</b></p>
             </li>
         </ol>

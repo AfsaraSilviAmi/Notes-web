@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Event</title>
+    <style>
+        html{
+            font-size: 16px;
+        }
+        h1{
+            font-size: 2.5rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+        p,li{
+            font-size: 1.5rem;
+        }
+        
+        ol{
+            list-style: none;
+        }
+        b{
+            color:crimson;
+        }
+        i{
+            color:darkslateblue
+        }
+        header{
+            text-align: center;
+        }
+         .big-img{
+            width: 95%;
+        }
+        
+        @media screen and (max-width:576px){
+            img{
+                width:98%;
+            }
+            
+             h1{
+            font-size: 2rem;
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+            p,li{
+            font-size: 1rem;
+        }
+        }
+        
+        @media screen and (min-width:576px) and (max-width:992px) {
+            img{
+                width:98%;
+            }
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <h1>DOM Event</h1>
+        <h2><a href="../../index.html">GO TO INDEX➡️</a></h2>
+    </header>
+    <section>
+        <h2>✔️What is Event in JS?</h2>
+        <p>An event is something that happens in a program <b>(like a click or key press)</b> that JavaScript can <b>detect and respond</b> to.</p>
+    </section>
+    <section>
+        <h2>✔️onclick</h2>
+        <p>onclick can be used <b>inside</b> the button.</p>
+        <img src="./images/onclick.png" alt="">
+    </section>
+    <section>
+        <h2>✔️onclick (for function)</h2>
+        <p>We can <b>call a function</b> in the <b>onclick</b>.</p>
+        <p><u>html:</u></p>
+        <img src="./images/func1.png" alt="">
+        <br> <br> <br>
+        <p>Here, we go in the <b>document</b>. Since we want to change the background color of the body, we take the <b>body</b>. Then we <b>style</b> the body. We changed the <b>backgroundColor</b> to a specific color of choice.</p>
+        <p><u>js:</u></p>
+        <img src="./images/func2.png" alt="">
+    </section>
+    <section>
+        <h2>✔️onclick (using Id)</h2>
+        <p>We specify the element/button to an <b>id</b>.</p>
+        <p><u>html:</u></p>
+        <img src="./images/id1.png" alt="">
+        <br> <br> <br>
+        <p>Then, we call that <b>id</b> by using <b>getElementById</b>. We use the <b>onclick</b> on the <b>variable</b> that <b>called/got the id</b>. We <b>assigned</b> it against a <b>function</b>.</p>
+        <p><u>js:</u></p>
+        <img src="./images/id2.png" alt="">
+    </section>
+    <section>
+        <h2>✔️click (using addEventListener)</h2>
+        <p><u>html:</u></p>
+        <img src="./images/event1.png" alt="">
+        <br><br>
+        <p><b>document.getElementById("id-name").addEventListener('event type', handler)</b>. Here, the <b>handler</b> can be a <b>function</b>.</p>
+        <p><u>js:</u></p>
+        <img src="./images/event2.png" alt="" class="big-img">
+    </section>
+    <section>
+        <h2>✔️Changing the text of a paragraph with the text of the input field</h2>
+        <p><u>html:</u></p>
+        <img src="./images/login1.png" alt="" class="big-img">
+        <br><br>
+        <p><u>js:</u></p>
+        <img src="./images/login2.png" alt="" class="big-img">
+    </section>
+    <section>
+        <h2>✔️Posting Comment</h2>
+        <p><u>html:</u></p>
+        <img src="./images/comment1.png" alt="" class="big-img">
+        <br><br>
+        <p><u>js:</u></p>
+        <img src="./images/comment2.png" alt="" class="big-img">
+    </section>
+  
+
+
+        mouseenter, mousemove, mouseout ,for inputfield--> focus, blur, keydown, event(used to know what typed), target, value 23-6 8:30
+
+        Github delete 23-6
+
+        bubble, delegate (concept)
+        </document>
+</body>
+</html>

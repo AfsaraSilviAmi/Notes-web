@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart (conceptual Class)</title>
+    <style>
+        html{
+            font-size: 16px;
+        }
+        h1{
+            font-size: 2.5rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+        p,li{
+            font-size: 1.5rem;
+        }
+        
+        ol{
+            list-style: none;
+        }
+        b{
+            color:crimson;
+        }
+        i{
+            color:darkslateblue
+        }
+        header{
+            text-align: center;
+        }
+         .big-img{
+            width: 95%;
+        }
+        
+        @media screen and (max-width:576px){
+            img{
+                width:98%;
+            }
+            
+             h1{
+            font-size: 2rem;
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+            p,li{
+            font-size: 1rem;
+        }
+        }
+        
+        @media screen and (min-width:576px) and (max-width:992px) {
+            img{
+                width:98%;
+            }
+        }
+        </style>
+</head>
+<body>
+      <header>
+        <h1>DOM Event</h1>
+        <h2><a href="../../index.html">GO TO INDEX➡️</a></h2>
+    </header>
+    <section>
+        <h2>The Output:</h2>
+        <img src="./images/output.png" alt="">
+    </section>
+    <section>
+        <h2>The HTML:</h2>
+        <img src="./images/cartHtml.png" alt="">
+    </section>
+    <section>
+        <h2>The CSS:</h2>
+        <img src="./images/theCSS.png" alt="">
+    </section>
+    <section>
+        <h2>The Full JS:</h2>
+        <img src="./images/thejs.png" alt="" class="big-img">
+    </section>
+    <section>
+        <h2>✅Getting the 'add to cart' Button:</h2>
+        <img src="./images/btnjs.png" alt="">
+    </section>
+    <section>
+        <h2>✅Selecting the closest and using textContent:</h2>
+        <p>Since there are <b>more than one add to cart button</b>, we used <b>for of</b> loop. And upon selecting the button we want the exact card/product item to be selected. And that's why we use the <b>closest</b> on our <b>target</b> event <b>(e)</b>. <br><br> Then, we get the <b>product name, price and category</b> from the <b>html</b>. We get their <b>textContent</b> and not the element. And since <b>price</b> is supposed to be a <b>number</b>, we used <b>parseInt</b>. <br><br> Then, we take the info (product name, price and category) in a <b>product object</b> and also include the <b>quantity</b>. The quantity value is <b>1</b>.</p>
+        <img src="./images/closestjs.png" alt="">
+    </section>
+</body>
+</html>
