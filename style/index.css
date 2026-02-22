@@ -39,6 +39,9 @@ li a:hover{
 #toggle-tail:checked + .dropdown_btn + .dropdown_menu {
     display: block;
 }
+#toggle-daisy:checked + .dropdown_btn + .dropdown_menu {
+    display: block;
+}
 #toggle-js:checked + .dropdown_btn + .dropdown_menu {
     display: block;
 }
