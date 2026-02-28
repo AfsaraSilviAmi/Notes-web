@@ -4,14 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DaisyUI</title>
+     <style>
+        html{
+            font-size: 16px;
+        }
+        h1{
+            font-size: 2.5rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+        p,li{
+            font-size: 1.5rem;
+        }
+        
+        ol{
+            list-style: none;
+        }
+        b{
+            color:crimson;
+        }
+        i{
+            color:darkslateblue
+        }
+        header{
+            text-align: center;
+        }
+         .big-img{
+            width: 95%;
+        }
+        header{
+            position:sticky;
+            top:0;
+            background-color: white;
+            z-index: 10;
+        }
+        
+        @media screen and (max-width:576px){
+            img{
+                width:98%;
+            }
+            
+             h1{
+            font-size: 2rem;
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+            p,li{
+            font-size: 1rem;
+        }
+        }
+        
+        @media screen and (min-width:576px) and (max-width:992px) {
+            img{
+                width:98%;
+            }
+        }
+         
+        </style>
 </head>
 <body>
-    DaisyUI, tailwind.config.js , cdn, theme--> data-theme: "dark" in html. but changes color of all elements according to theme. 
-    for button ---> btn
-    color --> btn-primary , bg-secondary
-    sizing --> btn-xs
-    soft buttons --> btn-soft
-    button outline --> btn-outline
-    navbar, card everything can be copied and modified from daisyUi
+     <header>
+        <h1>DaisyUI</h1>
+        <h2><a href="../../index.html">GO TO INDEX➡️</a></h2>
+    </header>
+    <section>
+        <h2>✔️How to use DaisyUI?</h2>
+        <p>Go to DaisyUI webpage. And go to <b>cdn</b>. From there <b>copy the code</b> and <b>paste it</b> in your <b>html header</b>. <br> <br> There also code for <b>theme</b> which you can copy and paste it to use their <b>custom theme</b>. But we have to write the <b>theme name</b> inside the <b>html opening tag</b> like this---</p>
+        <img src="./images/html.png" alt="">
+        <h2>✔️tailwind.config.js</h2>
+        <p>We need to create a <b>tailwind.config.js</b> file to make the intellisense work.</p>
+        <h2>✔️Theme Controller</h2>
+        <p>Copy the theme controller code to switch to <b>dark mode</b> and vise-versa.</p>
+    </section>
+    <section>
+        <p><b>✨btn is a default button of DaisyUI. We also have btn-primary, btn-secondary, btn-soft etc</b></p>
+        <p><b>✨We can copy paste cards, navbar, footer and other things from DaisyUI.</b></p>
+    </section>
 </body>
 </html>

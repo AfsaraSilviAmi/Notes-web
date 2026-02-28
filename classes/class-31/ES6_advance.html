@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 (advance)</title>
+     <style>
+        html{
+            font-size: 16px;
+        }
+        h1{
+            font-size: 2.5rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+        p,li{
+            font-size: 1.5rem;
+        }
+        
+        ol{
+            list-style: none;
+        }
+        b{
+            color:crimson;
+        }
+        i{
+            color:darkslateblue
+        }
+        header{
+            text-align: center;
+        }
+         .big-img{
+            width: 95%;
+        }
+        .img-w{
+            width:53%;
+          
+        }
+        header{
+            position:sticky;
+            top:0;
+            background-color: white;
+            z-index: 10;
+        }
+        
+        @media screen and (max-width:576px){
+            img{
+                width:98%;
+            }
+            
+             h1{
+            font-size: 2rem;
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+            p,li{
+            font-size: 1rem;
+        }
+        }
+        
+        @media screen and (min-width:576px) and (max-width:992px) {
+            img{
+                width:98%;
+            }
+        }
+
+        
+        </style>
+    
+</head>
+<body>
+     <header>
+        <h1>ES6 Advance</h1>
+        <h2><a href="../../index.html">GO TO INDEX➡️</a></h2>
+    </header>
+
+    <section>
+        <h2>✔️Hoisting</h2>
+        <p>Hoisting is a JavaScript behavior in which <b>variable and function declarations</b> are <b>moved ("hoisted") to the top</b> of their <b>containing scope</b> before the code is executed. <br> <br> <b>var</b> is <b>hoisted</b>, but <b>only the declaration, not the value that is assigned</b>.</p>
+        <img src="./images/var hoisted.png" alt="">
+        <p><b>let</b> and <b>const</b> also hoisted, but <b>not initialized</b>. They are in a <b>"Temporal Dead Zone"</b> from the start of the block until the declaration line</p>
+        <img src="./images/let const hoist.png" alt="">
+    </section>
+    <section>
+        <h2>✔️Scope</h2>
+        <p>Scope <b>accessibility (visibility) of variables, functions, and objects in a particular part of the program</b>. <br><br>Scope is <b>3</b> types--- <br><br>1. Global scope <br>2. Block scope <br>3. Function scope or local scope</p>
+        <p>✅<u>Global Scope:</u></p>
+        <img src="./images/global.png" alt="">
+        <p>✅<u>Block Scope:</u> <b>var does not maintain block scope</b>. But <b>let and const maintain block scope</b>.</p>
+        <img src="./images/block.png" alt="">
+          <p>✅<u>Function or Local Scope:</u> <b>var,let and const</b> all <b>maintain the function or local scope</b>.</p>
+          <img src="./images/func scope.png" alt="">
+    </section>
+    <section>
+        <h2>✔️Array Operations (map, filter, find , forEach, reduce)</h2>
+        <p>✅<u>map:</u> <b>map</b> is used to <b>update/modify element of an array</b>.</p>
+        <img src="./images/map.png" alt="">
+         <p>✅<u>filter:</u>*** <b>filter</b> is used to <b>filter multiple elements</b> of an array <b>based on certain conditions</b>.</p>
+         <img src="./images/filter.png" alt="">
+         <p>For Array Object---</p>
+         <img src="./images/filter2.png" alt="" class="big-img">
+          <p>✅<u>find:</u> <b>find</b> is used to <b>find a single element</b> of an array <b>based on certain conditions</b>. If <b>multiple elements meet the condition</b> then only <b>the 1st element which met the condition</b> is consoled.</p>
+          <img src="./images/find.png" alt="">
+           <p>✅<u>forEach:</u> <b>forEach</b> is just a <b>loop iteration</b>.</p>
+           <img src="./images/forEach.png" alt="">
+           <p>The Output---</p>
+           <img src="./images/forEach output.png" alt="" class="img-w">
+           <p>✅<u>reduce</u>(optional):</p>
+           <img src="./images/reduce.png" alt="" class="big-img">
+
+    </section>
+    undefined vs Null
+    Truthy Falsy, double not
+    closure (counter example)
+    callback function
+    pass-by-value(primitive) pass-by-reference(non-primitive) arguments(It is an array like object but can be converted to array by ...arguments)
+   
+</body>
+</html>

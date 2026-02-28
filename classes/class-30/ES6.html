@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6/more JS</title>
+     <style>
+        html{
+            font-size: 16px;
+        }
+        h1{
+            font-size: 2.5rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+        p,li{
+            font-size: 1.5rem;
+        }
+        
+        ol{
+            list-style: none;
+        }
+        b{
+            color:crimson;
+        }
+        i{
+            color:darkslateblue
+        }
+        header{
+            text-align: center;
+        }
+         .big-img{
+            width: 95%;
+        }
+         header{
+            position:sticky;
+            top:0;
+            background-color: white;
+            z-index: 10;
+        }
+        
+        @media screen and (max-width:576px){
+            img{
+                width:98%;
+            }
+            
+             h1{
+            font-size: 2rem;
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+            p,li{
+            font-size: 1rem;
+        }
+        }
+        
+        @media screen and (min-width:576px) and (max-width:992px) {
+            img{
+                width:98%;
+            }
+        }
+        
+
+        </style>
+</head>
+<body> 
+     <header>
+        <h1>ES6</h1>
+        <h2><a href="../../index.html">GO TO INDEX➡️</a></h2>
+    </header>
+    <section>
+      <h2>✔️What is ES6</h2>
+      <p>ES6 <b>(ECMAScript 2015)</b> is the <b>6th version of JavaScript</b> that <b>introduced modern features</b> to make JS cleaner, more readable,more powerful and better for large applications.</p>
+    </section>
+    <section>
+      <h2>✔️Difference between var, const and let</h2>
+      <p>✅<u>Var:</u></p>
+      <img src="./images/var.png" alt="">
+      <p>Here, if we want then we can use <b>console.log(Name); before declaring</b> the variable. It will give <b>undefined</b>. So, it is <b>not block-scoped</b>. And using <b>var</b> when <b>reassigning</b> is <b>allowed</b>. This cas cause a lot of bugs. It's better not to use it.</p>
+      <p>✅<u>Let:</u></p>
+      <img src="./images/let.png" alt="">
+      <p>Here, if we use <b>console.log(Name); before declaring</b> the variable, it will give <b>an error</b>. So, it is <b>block-scoped</b>. And using <b>let (redeclaring)</b> when <b>reassigning</b> is <b> not allowed</b>. It should be used when we want to <b>change</b> the <b>value</b> of the variable.</p>
+      <p>✅<u>const:</u></p>
+      <p>It is <b>block-scoped</b>. And it <b>can not</b> be <b>reassigned</b>. </p>
+      <img src="./images/const.png" alt="">
+      <p>But constant <b>object</b> can be <b>modified</b>.</p>
+    </section>
+     <section>
+      <h2>✔️Default parameters when no value is provided</h2>
+       <p>Instead of undefined, this function returns a <b>default value</b> even if <b>no value is provided</b>. If a <b>value</b> is <b>provided</b> then it <b>uses that value</b>.</p>
+      <img src="./images/default.png" alt="">
+    </section>
+     <section>
+      <h2>✔️Arrow function</h2>
+      <p>Tradition function is <b>hoisted</b> but <b>Arrow function</b> is <b>NOT hoisted</b>.</p>
+       <p>✅<u>Syntax:</u></p>
+       <img src="./images/syntax.png" alt="">
+       <p>✅<u>Single line expression:</u></p>
+       <img src="./images/params.png" alt="">
+    </section>
+    <section>
+      <h2>✔️Rest Operator</h2>
+       <p>The rest parameter (...) allows a <b>function to accept any number of arguments</b> and <b>collect them into a single array</b>.</p>
+       <img src="../class-31/images/rest.png" alt="">
+    </section>
+     <section>
+      <h2>✔️Spread Operator</h2>
+       <p>Used to <b>expand arrays or objects </b>into <b>individual elements</b>. When <b>copying</b> using spread operator, we don't copy the WHOLE array like we usually do. Instead, we copy the elements within that array. Thus changing the 1st array doesn't change the 2nd one.</p>
+       <img src="./images/spread.png" alt="">
+    </section>
+     <section>
+      <h2>✔️Object and Array Destructuring</h2>
+       <p>Destructuring allows us to <b>extract values from arrays</b> or <b>properties from objects</b> and <b>store them into variables</b>.</p>
+        <p>✅<u>Array Destructuring:</u></p>
+        <img src="./images/arr des.png" alt="">
+        <p>We are able to <b>SKIP</b> values by <b>giving gap for the values we don't want</b>.</p>
+         <p>✅<u>Object Destructuring:</u></p>
+         <img src="./images/obj des.png" alt="">
+         <p>We are also able to <b>change the property name</b> in an object.</p>
+    </section>
+    <section>
+      <h2>✔️Keys, Values, Entries</h2>
+       <img src="./images/key value entries.png" alt="">
+    </section>
+      <h2>✔️Nested Object</h2>
+      <p>Nested object is an object which has another object nested inside of it.</p>
+       <img src="./images/nested.png" alt="">
+    </section>
+    <section>
+        <h2>✔️Optional Chaining***</h2>
+        <p>Without <b>optional chaining(?.)</b> in <b>person2</b>, it would have given an <b>Error</b> since <b>no object named country exists</b>. Instead of an error <b>optional chaining</b> gives <b>undefined</b>.</p>
+        <img src="./images/optional chaining.png" alt="">
+    </section>
+    <section>
+        <h2>✔️Delete</h2>
+        <p>delete is used to <b>remove any property</b> from an <b>object</b>.</p>
+        <img src="./images/delete.png" alt="">
+        <p>Output: <b>{ cover: 'light blue', pages: 367 }</b></p>
+    </section>
+    <section>
+        <h2>✔️Freeze</h2>
+        <p>freeze <b>prevents insert, delete and update</b> of any <b>property</b> from an <b>object</b>.</p>
+        <img src="./images/freeze.png" alt="">
+        <p>Output: <b>{ cover: 'light blue', pages: 367, notes: false }</b></p>
+    </section>
+    <section>
+        <h2>✔️Seal</h2>
+        <p>Seal <b>prevents insert and delete</b> of any <b>property</b> from an <b>object</b>. But we can <b>update</b> the existing properties.</p>
+        <img src="./images/seal.png" alt="">
+        <p>Output: <b>{ cover: 'paste green', pages: 367, notes: false }</b></p>
+    </section>
+</body>
+</html>
