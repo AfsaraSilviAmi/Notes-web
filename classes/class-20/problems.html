@@ -29,7 +29,13 @@
         .big-img{
             width: 95%;
         }
-        
+        header{
+            position:sticky;
+            top:0;
+            background-color: white;
+            z-index: 10;
+        }
+
         @media screen and (max-width:576px){
             img{
                 width:98%;
@@ -111,11 +117,29 @@
         <p>For swapping values we need a <b>temp</b>. First of all, we keep the value of <b>a</b> in  <b>temp</b>. Then we keep the value of <b>b</b> in the then <b>empty a</b>. Now, <b>b is empty</b>. So, we put the <b>temp</b> which has <b>a's value</b> in the <b>empty b</b>. Thus, swapping is done. And to <b>return both values</b> we need to <b>return [a,b]</b>.</p>
         <img src="./images/swap.png" alt="">
     </section>
-    
-    
-     
-    Math.min, abs, round, ceil, floor   
-
-    new date()
+    <section>
+        <h2>✔️Math.min()</h2>
+        <p>Math.min() returns the <b>smallest number</b> from a list of numbers. Example--- <br> <br><b>let result = Math.min(5, 2, 9, 1); <br> console.log(result);</b> <br><br> Output: 1</p>
+    </section>
+    <section>
+        <h2>✔️Math.abs()</h2>
+        <p>Math.abs() returns the <b>absolute (positive) value</b> of a numbers. Negative numbers become positive. Example--- <br> <br><b>let result = Math.abs(-10);<br> console.log(result);</b> <br><br> Output: 10</p>
+    </section>
+    <section>
+        <h2>✔️Math.round()</h2>
+        <p>Math.round() rounds a number to the <b>nearest whole number</b>. Example--- <br> <br><b>let result1 = Math.round(4.3);<br> let result2 = Math.round(4.7); <br>console.log(result1, result2);</b> <br><br> Output: 4  5</p>
+    </section>
+    <section>
+        <h2>✔️Math.ceil()</h2>
+        <p>Math.ceil() rounds a number <b>up </b>to the <b>nearest integer</b>. Example--- <br> <br><b>let result = Math.ceil(4.1);<br>console.log(result);</b> <br><br> Output: 5</p>
+    </section>
+    <section>
+        <h2>✔️Math.floor()</h2>
+        <p>Math.floor() rounds a number <b>down </b>to the <b>nearest integer</b>. Example--- <br> <br><b>let result = Math.floor(4.9);<br>console.log(result);</b> <br><br> Output: 4</p>
+    </section>  
+    <section>
+        <h2>✔️new Date()</h2>
+        <p>new Date() creates a <b>Date object </b>that contains the <b>current date and time</b>. Example--- <br> <br><b>let today = new Date();<br>console.log(today);</b> <br><br> Output: Mon Mar 09 2026 10:30:00 <br> <br> We can get specific parts as well: <br> <br> <b>let date = new Date(); <br> console.log(date.getFullYear());</b>//year(2026) <br> <b>console.log(date.getFullYear());</b>//month(0-11) <br> <b>console.log(date.getDate());</b>//day(1-31)</p>
+    </section>  
 </body>
 </html>

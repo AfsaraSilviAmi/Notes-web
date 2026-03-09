@@ -48,3 +48,6 @@ li a:hover{
 #toggle-dom:checked + .dropdown_btn + .dropdown_menu {
     display: block;
 }
+#toggle-api:checked + .dropdown_btn + .dropdown_menu {
+    display: block;
+}

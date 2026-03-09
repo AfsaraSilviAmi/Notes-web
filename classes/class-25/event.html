@@ -33,6 +33,15 @@
          .big-img{
             width: 95%;
         }
+        ul{
+            list-style: none;
+        }
+         header{
+            position:sticky;
+            top:0;
+            background-color: white;
+            z-index: 10;
+        }
         
         @media screen and (max-width:576px){
             img{
@@ -70,35 +79,43 @@
         <h2>✔️onclick</h2>
         <p>onclick can be used <b>inside</b> the button.</p>
         <img src="./images/onclick.png" alt="">
-    </section>
-    <section>
-        <h2>✔️onclick (for function)</h2>
+        <ul>
+            <li>
+                 <section>
+        <h2>1️⃣onclick (for function)</h2>
         <p>We can <b>call a function</b> in the <b>onclick</b>.</p>
         <p><u>html:</u></p>
         <img src="./images/func1.png" alt="">
-        <br> <br> <br>
+        <br> <br>
         <p>Here, we go in the <b>document</b>. Since we want to change the background color of the body, we take the <b>body</b>. Then we <b>style</b> the body. We changed the <b>backgroundColor</b> to a specific color of choice.</p>
         <p><u>js:</u></p>
         <img src="./images/func2.png" alt="">
     </section>
-    <section>
-        <h2>✔️onclick (using Id)</h2>
+            </li>
+            <li>
+              <section>
+        <h2>2️⃣onclick (using Id)</h2>
         <p>We specify the element/button to an <b>id</b>.</p>
         <p><u>html:</u></p>
         <img src="./images/id1.png" alt="">
-        <br> <br> <br>
+        <br> <br>
         <p>Then, we call that <b>id</b> by using <b>getElementById</b>. We use the <b>onclick</b> on the <b>variable</b> that <b>called/got the id</b>. We <b>assigned</b> it against a <b>function</b>.</p>
         <p><u>js:</u></p>
         <img src="./images/id2.png" alt="">
     </section>
-    <section>
-        <h2>✔️click (using addEventListener)</h2>
+            </li>
+            <li>
+              <section>
+        <h2>3️⃣click (using addEventListener)</h2>
         <p><u>html:</u></p>
         <img src="./images/event1.png" alt="">
         <br><br>
         <p><b>document.getElementById("id-name").addEventListener('event type', handler)</b>. Here, the <b>handler</b> can be a <b>function</b>.</p>
         <p><u>js:</u></p>
         <img src="./images/event2.png" alt="" class="big-img">
+    </section>  
+            </li>
+        </ul>
     </section>
     <section>
         <h2>✔️Changing the text of a paragraph with the text of the input field</h2>
@@ -116,14 +133,81 @@
         <p><u>js:</u></p>
         <img src="./images/comment2.png" alt="" class="big-img">
     </section>
-  
-
-
-        mouseenter, mousemove, mouseout ,for inputfield--> focus, blur, keydown, event(used to know what typed), target, value 23-6 8:30
-
-        Github delete 23-6
-
-        bubble, delegate (concept)
-        </document>
+  <section>
+    <h2>✔️Mouse Events</h2>
+    <ul>
+        <li>
+            <h2>1️⃣mouseenter</h2>
+            <p>mouseenter happens when the <b>mouse pointer enters an element</b>. Example-- <br><br><b>let box = document.getElementById("box"); <br>box.addEventListener("mouseenter", function(){ <br>console.log("Mouse entered the box"); <br>});</b></p>
+        </li>
+        <li>
+            <h2>2️⃣mousemove</h2>
+            <p>mousemove runs <b>every time the mouse moves inside an element</b>.</p>
+        </li>
+        <li>
+            <h2>3️⃣mouseout</h2>
+            <p>mouseout happens when the <b>mouse leaves the element</b>.</p>
+        </li>
+    </ul>
+  </section>
+  <section>
+      <h2>✔️Input Field Events</h2>
+      <ul>
+        <li>
+            
+                <h2>1️⃣focus</h2>
+                <p>focus happens when an <b>input field becomes active (clicked or selected)</b>. Example--- <br> <br><b>let input = document.getElementById("name") <br>input.addEventListener("focus",()=>{ <br> console.log("The input is selected") <br>})</b></p>
+        </li>
+        <li>
+            <h2>2️⃣blur</h2>
+            <p>blur happens when the input field <b>looses focus</b>.</p>
+        </li>
+      </ul>
+  </section>
+  <section>
+    <h2>✔️Keyboard Event</h2>
+    <ul>
+        <li>
+            <h2>1️⃣keydown</h2>
+            <p>keydown happens when <b>a key is pressed on the keyboard</b>. Example--- <br> <br> <b>input.addEventListener("keydown", function(){ <br> console.log("Key pressed"); <br> });</b></p>
+        </li>
+        <li>
+            <h2>2️⃣keyup</h2>
+            <p>keyup  runs when a<b> key is released</b>.</p>
+        </li>
+    </ul>
+  </section>
+<section>
+    <h2>✔️event</h2>
+    <p>event is an <b>object</b> that <b>stores information about the event (like which key was pressed)</b>. Example--- <br> <br> <b>makeDiv.addEventListener("click", function(event){ <br>console.log(event);<br>});</b></p>
+</section>
+<section>
+    <h2>✔️event</h2>
+    <p>event is an <b>object</b> that <b>stores information about the event (like which key was pressed)</b>. Example--- <br> <br> <b>makeDiv.addEventListener("click", function(event){ <br>console.log(event);<br>});</b></p>
+</section>
+<section>
+    <h2>✔️target</h2>
+    <p>target tells which <b>element triggered the event</b>. Example--- <br> <br> <b>makeDiv.addEventListener("click", function(event){ <br>console.log(event.target);<br>});</b></p>
+</section>
+<section>
+    <h2>✔️value</h2>
+    <p>value gives the <b>text that has been entered in the input field</b>. Example--- <br> <br> <b>const inputElement = document.getElementById("input");<br>const InputValue = inputElement.value;</b></p>
+</section>
+<section>
+    <h2>✔️By putting 'delete' as input we delete a card</h2>
+     <p><u>html:</u></p>
+        <img src="./images/delete.png" alt="" class="big-img">
+        <br><br>
+        <p><u>js:</u></p>
+        <img src="./images/delete2.png" alt="" class="big-img">
+</section>
+<section>
+    <h2>✔️Event Bubbling</h2>
+    <p>When an event happens on an element, it <b>“bubbles up” the DOM tree</b>, triggering the <b>same event on it's parent element</b> unless it's stopped.</p>
+</section>
+<section>
+    <h2>✔️Event Delegation</h2>
+    <p>Instead of adding <b>event listeners</b> to <b>every child</b>, we add one listener to a <b>parent</b> and handle the event using <b>event.target</b>.</p>
+</section>
 </body>
 </html>
