@@ -33,6 +33,12 @@
          .big-img{
             width: 95%;
         }
+         header{
+            position:sticky;
+            top:0;
+            background-color: white;
+            z-index: 10;
+        }
         
         @media screen and (max-width:576px){
             img{
@@ -87,6 +93,19 @@
         <p>Since there are <b>more than one add to cart button</b>, we used <b>for of</b> loop. And upon selecting the button we want the exact card/product item to be selected. And that's why we use the <b>closest</b> on our <b>target</b> event <b>(e)</b>. <br><br> Then, we get the <b>product name, price and category</b> from the <b>html</b>. We get their <b>textContent</b> and not the element. And since <b>price</b> is supposed to be a <b>number</b>, we used <b>parseInt</b>. <br><br> Then, we take the info (product name, price and category) in a <b>product object</b> and also include the <b>quantity</b>. The quantity value is <b>1</b>.</p>
         <img src="./images/closestjs.png" alt="">
     </section>
+    <section>
+        <h2>✅Making a Cart array to store the product info:</h2>
+        <img src="./images/cart array.png" alt="">
+    </section>
+    <section>
+        <h2>✅Using an add to Cart function to push the product info inside the cart array:</h2>
+        <p>Here, we used the <b>find()</b> method to find any <b>existing</b> item in the cart. We <b>compare</b> the <b>item product name in the cart</b> with the product(object) name we get from the clicking event. <br> <br> If the product <b>already exists</b> we <b>increase the quantity</b>,else we <b>push</b> the <b>product in cart array</b>.</p>
+        <img src="./images/addToCart.png" alt="" class="big-img">
+    </section>
+    <section>
+         <h2>✅Showing the items, their quantity, their total price:</h2>
+         <p>First we get, the cartItemDiv , cartCount(the total number of items) and the totalPrice(div) <b>globally</b>.<br> <br>Then we write a function, where at first we <b>clear</b> the <b>cartItemDiv</b>. Then we <b>initialize</b> the <b>total</b>(price) and <b>totalItem</b> to <b>0</b>. <br> <br> Then using the <b>for of</b> loop we go through the <b>cart array</b> which contains the <b>information each product</b> as <b>objects</b>. <br> <br> We find the <b>total</b>(price) and <b>totalItem</b>. We also <b>create</b> a new <b>div</b>. And in that div's <b>innerHTML</b> we put info using <b>template string</b>. And we <b>append</b> that <b>div</b> in <b>cartItemDiv</b>. <br><br><b>Out of the loop</b>, we change the <b>innerText</b> of <b>cartCount</b> and <b>totalPrice</b>.</p>
+         <img src="./images/updatecart.png" alt="" class="big-img">
+    </section>
 </body>
 </html>
-incomplete
