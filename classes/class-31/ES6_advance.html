@@ -14,7 +14,7 @@
         h2{
             font-size: 2rem;
         }
-        p,li{
+        p,li,th,td{
             font-size: 1.5rem;
         }
         
@@ -36,6 +36,10 @@
         .img-w{
             width:53%;
           
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 7px;
         }
         header{
             position:sticky;
@@ -138,10 +142,43 @@
         <p><b>Double not(!!)</b> is used in such case where we take value(num,string etc), and we use <b>!(not)</b> to make that value <b>false</b>. And now we want that value to be <b>true</b> and that's when we use <b>another not</b>.</p>
         <img src="./images/truth.png" alt="">
     </section>
+<section>
+    <h2>✔️Undefined Vs Null</h2>
+    <table>
+    <tr>
+        <th>Feature</th>
+        <th>Undefined</th>
+        <th>Null</th>
+    </tr>
 
-    undefined vs Null
-    callback function
-    
-   
+    <tr>
+        <td><b>Meaning</b></td>
+        <td>A variable <b>exists but has no value assigned</b></td>
+        <td>A variable that <b>intentionally has no value</b></td>
+    </tr>
+
+    <tr>
+        <td><b>Type(typeof)</b></td>
+        <td>undefined</td>
+        <td>object</td>
+    </tr>
+
+    <tr>
+        <td><b>Who sets it</b></td>
+        <td>JavaScript automatically</td>
+        <td>Usually set by the <b>developer</b></td>
+    </tr>
+
+    <tr>
+        <td><b>Example</b></td>
+        <td>let a;</td>
+        <td>let a = null;</td>
+    </tr>
+</table>
+</section>
+    <section>
+        <h2>✔️Callback Function</h2>
+        <p>A callback function is a <b>function passed as an argument</b> to <b>another function</b> and <b>executed later</b>. Example--- <br><br> <b>function one(two){ </b> //two function is passed as argument <b><br> two();</b> //function two called <b><br> console.log("The one function is running); <br>} <br> <br> function two(){ <br> console.log(The two function is running);<br>}</b> <br> <br> Output: The two function is running <br> The one function is running</p>
+    </section>
 </body>
 </html>
