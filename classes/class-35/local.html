@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+    <style>
+        html{
+            font-size: 16px;
+        }
+        h1{
+            font-size: 2.5rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+        p,li,th,td{
+            font-size: 1.5rem;
+        }
+        
+        ol{
+            list-style: none;
+        }
+        b{
+            color:crimson;
+        }
+        i{
+            color:darkslateblue
+        }
+        header{
+            text-align: center;
+        }
+         .big-img{
+            width: 95%;
+        }
+        .img-w{
+            width:53%;
+          
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 7px;
+        }
+        header{
+            position:sticky;
+            top:0;
+            background-color: white;
+            z-index: 10;
+        }
+        
+        @media screen and (max-width:576px){
+            img{
+                width:98%;
+            }
+            
+             h1{
+            font-size: 2rem;
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+            p,li{
+            font-size: 1rem;
+        }
+        }
+        
+        @media screen and (min-width:576px) and (max-width:992px) {
+            img{
+                width:98%;
+            }
+        }
+
+        
+        </style>
+</head>
+<body>
+     <header>
+        <h1>Local Storage</h1>
+        <h2><a href="../../index.html">GO TO INDEX➡️</a></h2>
+    </header>
+    local storage is inspect then application then find local storage
+    localStorage.setItem ,getItem, removeItem, clear, localStorage only stores string so to store object or array one must use stringify and parse
+</body>
+</html>

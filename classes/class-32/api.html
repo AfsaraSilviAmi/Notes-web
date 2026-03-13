@@ -4,14 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API JSON</title>
+    <style>
+        html{
+            font-size: 16px;
+        }
+        h1{
+            font-size: 2.5rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+        p,li,th,td{
+            font-size: 1.5rem;
+        }
+        
+        ol{
+            list-style: none;
+        }
+        b{
+            color:crimson;
+        }
+        i{
+            color:darkslateblue
+        }
+        header{
+            text-align: center;
+        }
+         .big-img{
+            width: 95%;
+        }
+        .img-w{
+            width:53%;
+          
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 7px;
+        }
+        header{
+            position:sticky;
+            top:0;
+            background-color: white;
+            z-index: 10;
+        }
+        ul{
+            list-style: none;
+        }
+        
+        @media screen and (max-width:576px){
+            img{
+                width:98%;
+            }
+            
+             h1{
+            font-size: 2rem;
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+            p,li{
+            font-size: 1rem;
+        }
+        }
+        
+        @media screen and (min-width:576px) and (max-width:992px) {
+            img{
+                width:98%;
+            }
+        }
+ 
+        </style>
 </head>
 <body>
-    API
-    JSON json.stringify-->obj to json json.parse-->json to object
-    fetch()-->promise of response 28-3 28-4
+     <header>
+        <h1>API and JSON</h1>
+        <h2><a href="../../index.html">GO TO INDEX➡️</a></h2>
+    </header>
+    <section>
+        <h2>✔️API</h2>
+        <p>API stands for <b>Application Programming Interface</b>. It allows different <b>software or applications to communicate with each other</b> and <b>exchange data</b>. <br> <br> <b>Website ➡️API request ➡️ Server ➡️ Data Returned</b></p>
+    </section>
+     <section>
+        <h2>✔️JSON</h2>
+        <p>JSON stands for <b>JavaScript Object Notation</b>. It is a <b>data format</b> used to <b>store and send data</b>. It looks very <b>similar</b> to <b>JavaScript Objects</b>. Example--- <br><br> <b>{ <br> "name": "Ami", <br>"age":25, <br> "city":"Dhaka" <br>}</b> <br> <br> The only difference is that the <b>properties</b> in JSON are <b>inside quotation</b>.</p>
+        <ul>
+            <li>
+                <h2>1️⃣JSON.stringify()</h2>
+                <p>JSON.stringify() converts a <b>JavaScript object</b> → <b>JSON string</b>. Example--- <br> <br> <b>let user = { <br> name: "Ami", <br>age:25, <br> city:"Dhaka" <br>} <br><br> let JSONData = JSON.stringify(user); <br> <br> console.log(JSONData);</b> <br> <br> Output: {"name": "Ami", "age":25, "city":"Dhaka"}</p>
+            </li>
+            <li>
+                <h2>2️⃣JSON.parse()</h2>
+                <p>JSON.parse() converts a <b>JSON string</b> → <b>JavaScript object</b>. Example--- <br><br> <b>let jsonData = '{"name":"Ami","age":24}'; <br><br>let user = JSON.parse(jsonData); <br> <br> console.log(user.name);</b> <br><br>Output: Ami</p>
+            </li>
+        </ul>
+     </section>
+     <section>
+        <h2>✔️fetch()</h2>
+        <p>The fetch() method is used to <b>fetch</b> the API from the server.</p>
+        <img src="./images/fetch.png" alt="" class="big-img">
+     </section>
+     <section>
+        <h2>✔️loading and displaying</h2>
+        <p>Using <b>fetch</b> we get the <b>api</b>. After converting it into json format using the <b>json()</b> method, we get the <b>data</b>. <br> <br> We <b>load the data</b> in a display function in order to display it. Usually involves getting the <b>container id</b>, clearing it's innerHTML, going through a loop to <b>create several divs</b>, using template strings to show the values of the properties in an object and <b>append</b> it to the container.</p>
+        <img src="./images/loading and display.png" alt="" class="big-img">
+     </section>
+     <section>
+        <h2>✔️async/await</h2>
+        <p><b>✅async</b> makes a <b>function return a promise</b>, <b>✅await pauses code until the promise is done</b>. </p>
+     </section>
     post -- 28-6
-    HW --> comment and user
-    todo -- 28-7
     post,patch,put,get ??
     async? await?
 

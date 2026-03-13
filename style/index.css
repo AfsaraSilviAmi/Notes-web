@@ -51,3 +51,9 @@ li a:hover{
 #toggle-api:checked + .dropdown_btn + .dropdown_menu {
     display: block;
 }
+#toggle-local:checked + .dropdown_btn + .dropdown_menu {
+    display: block;
+}
+#toggle-react:checked + .dropdown_btn + .dropdown_menu {
+    display: block;
+}
