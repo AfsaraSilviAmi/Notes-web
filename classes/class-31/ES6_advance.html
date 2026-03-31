@@ -47,6 +47,16 @@
             background-color: white;
             z-index: 10;
         }
+        table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* prevents squishing */
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
         
         @media screen and (max-width:576px){
             img{
@@ -62,6 +72,10 @@
             p,li{
             font-size: 1rem;
         }
+        th, td {
+        font-size: 1rem;
+        padding: 5px;
+    }
         }
         
         @media screen and (min-width:576px) and (max-width:992px) {
@@ -144,7 +158,8 @@
     </section>
 <section>
     <h2>✔️Undefined Vs Null</h2>
-    <table>
+   <div  class="table-container">
+     <table>
     <tr>
         <th>Feature</th>
         <th>Undefined</th>
@@ -175,6 +190,7 @@
         <td>let a = null;</td>
     </tr>
 </table>
+   </div>
 </section>
     <section>
         <h2>✔️Callback Function</h2>

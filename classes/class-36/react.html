@@ -50,6 +50,15 @@
         ul{
             list-style: none;
         }
+        table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* prevents squishing */
+}
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
         
         @media screen and (max-width:576px){
             img{
@@ -65,6 +74,10 @@
             p,li{
             font-size: 1rem;
         }
+        th, td {
+        font-size: 1rem;
+        padding: 5px;
+    }
         }
         
         @media screen and (min-width:576px) and (max-width:992px) {
@@ -80,52 +93,155 @@
         <h1>React Core Concept and Environment</h1>
         <h2><a href="../../index.html">GO TO INDEX➡️</a></h2>
     </header>
-    React
-    React vs Next vs Vue
-    go to vite--> getting started --> click using vite commandline dropdown --> in your project folder command prompt write -->npm create vite@latest the-folder-name -- --template react
-    for first timers will get many questions
-    but for not first timer copy the text u were told and paste it in the command prompt
-    components --> a small unit of an website: just a js function
-    JSX --> html like js
-    JSX rules
-    JSX curly brackets
+    <section>
+        <h1>✔️React</h1>
+        <p>React is a <b>JavaScript library for building UI (not a full framework)</b>. React is <b>reusable</b> that is, we can make many <b>components</b>(NavBar, Banner etc) in react which can be reused.<br> <br><b>Library</b> is something we call when <b> we need it</b>. <br><b>Framework</b> has it's own rules and we must follow it.</p>
+    </section>
+    <section>
+        <h1>✔️React Vs Next.js Vs Vue</h1>
+         <div class="table-container">
+            <table>
+    <tr>
+      <th style="color: cornflowerblue;">Feature</th>
+      <th>React</th>
+      <th>Next.js</th>
+      <th>Vue</th>
+    </tr>
+
+    <tr>
+      <td style="color:palevioletred">Type</td>
+      <td>Library (like a <b>toolbox</b> where one <b>can pick their desired tool</b>)</td>
+      <td>Framework (like a <b>factory</b> which has it's <b>own building process</b>)</td>
+      <td>Framework</td>
+    </tr>
+
+    <tr>
+      <td style="color:red">Developer</td>
+      <td>Meta</td>
+      <td>Vercel</td>
+      <td>Evan You</td>
+    </tr>
+
+    <tr>
+      <td style="color:orange">SEO</td>
+      <td>Weak</td>
+      <td>Strong</td>
+      <td>Medium</td>
+    </tr>
+
+    <tr>
+      <td style="color:yellow">Routing</td>
+      <td>Manual (React Router)</td>
+      <td>Built-in</td>
+      <td>Built-in (Vue Router)</td>
+    </tr>
+
+    <tr> 
+      <td style="color: green;">Performance</td>
+      <td>Good</td>
+      <td>Very Fast</td>
+      <td>Good</td>
+    </tr>
+
+    <tr>
+      <td style="color:blue">Flexibility</td>
+      <td>High</td>
+      <td>Medium</td>
+      <td>Medium</td>
+    </tr>
+
+    <tr>
+      <td style="color:purple">Backend Support</td>
+      <td>No</td>
+      <td>Yes (API routes)</td>
+      <td>No</td>
+    </tr>
+
+    <tr>
+      <td style="color:aquamarine">Use Case</td>
+      <td><b>SPAs</b>, dashboards</td>
+      <td><b>SEO websites</b>, full-stack apps</td>
+      <td>Simple apps, fast development</td>
+    </tr>
+
+  </table>
+         </div>
+    </section>
+    
+    <section>
+        <h1>✔️✔️<b>Setting Up</b> React Using <b>Vite</b> </h1>
+        <p>✅First we go to the <b>vite website</b>. <br> <br> ✅Click on <b>getting started</b>. <br> <br>✅Go to Your Project folder(like PH Folder) and <b>open the command prompt</b>. <br> <br>✅ Paste <b>npm create vite@latest</b> on the command prompt. In case of first setup a lot of questions might be asked but generally it tells one to <b>install npm</b>, <b>Name of the project</b>, choose <b>React</b> and then <b>JavaScript</b> when give option. <br> <br>✅It will give a <b>local host link</b> at the end of it. Also we can type <b>npm run dev</b> in the VScode <b>terminal</b> to get the <b>localhost link</b> again.</p>
+    </section>
+   
+   <section>
+    <h1>✔️JSX(JavaScript XML)</h1>
+    <p>JSX lets one <b>write HTML-like code</b> inside <b>JavaScript</b>. In react, we use the <b>jsx extension</b>(App.jsx, NavBar.jsx etc).</p>
+   </section>
+
+    <section>
+        <h1>✔️JSX Rules</h1>
+    <p>✅Must return a single parent that is <b>only One div</b> is accepted inside <b>return</b>. Nested div is accepted.</p>
+    <p>✅All <b>tags</b> should be <b>closed</b>.</p>
+    <p>✅We use <b>className</b> instead of class in React.</p>
+    <p>✅We use <b>CamelCase</b> for attributes.</p>
+    <p>✅✅We can use <b>JavaScript</b> only <b>INSIDE CURLY BRACKETS</b>.</p>
+    </section>
+
     <section>
         <h2>✔️Inside the app.jsx</h2>
-        <p></p>
-        <img src="./images/pet func.png" alt="">
-        <img src="./images/pet in app.png" alt="" class="big-img">
-        <img src="./images/pet output.png" alt="">
+        <p>The Output:</p>
+         <img src="./images/pet output.png" alt="">
+         <p>We made a <b>reusable</b> 'Pet function' where we can dynamically get the <b>name</b>, <b>age</b> and <b>furColor</b> value through the <b>parameters</b>.</p>
+          <img src="./images/pet func.png" alt="" class="big-img">
+          <p>App.jsx is our <b>'main display file'</b>. Here we used the <b>Pet function</b> as reusable <b>tags</b> and inserted the name, age and furColor values for each pet tag.</p>
+         <img src="./images/pet in app.png" alt="" class="big-img">   
+       
     </section>
    <section>
     <h2>✔️Conditional Rendering</h2>
-    <p></p>
-    <img src="./images/export food.png" alt="">
-    <img src="./images/import food.png" alt="">
-    <img src="./images/food in apx.png" alt="">
+    <p>The Output:</p>
     <img src="./images/food output.png" alt="">
+    <p>Here, we conditionally rendered using a function. And we <b>exported</b> this function. Later we can import ans export function automatically using a VsCode extention.</p>
+    <img src="./images/export food.png" alt="">
+    <p>Here, we imported the <b>Food</b> function from the <b>food</b>.jsx file.</p>
+    <img src="./images/import food.png" alt="">
+    <p>Here, we used the <b>Food tag</b> to add our values.</p>
+    <img src="./images/food in apx.png" alt="">
+    
    </section>
-    import export --> app.jsx,food.jsx
-    conditional -- > ternary , &&(used as true), ||(used as false)
     <section>
-       <h2>✔️</h2>
-        <img src="./images/color arr.png" alt="" class="big-img">
-        <img src="./images/export color.png" alt="">
-        <img src="./images/loop color.png" alt="" class="big-img">
+        <h1>✔️Ternary</h1>
+        <p>✅&& (used as <b>true</b>). Ex--- <b>{toggle === "products" && &ltProducts setToggle={setToggle}>&lt/Products>}</b></p>
+        <p>✅|| (used as <b>false</b>)</p>
+    </section>
+   
+    <section>
+       <h2>✔️Using .map to go through each color in an Array</h2>
+       <p>The Output:</p>
         <img src="./images/color output.png" alt="">
+        <p><b>Array</b> of colors---</p>
+        <img src="./images/color arr.png" alt="" class="big-img">
+        <p>Makeing the <b>Color Function</b> and <b>exporting</b> it---</p>
+        <img src="./images/export color.png" alt="" class="big-img">
+        <p>Using <b>.map</b> to <b>loop</b> through the <b>colors Array</b>---</p>
+        <img src="./images/loop color.png" alt="" class="big-img">
+       
     </section>
     <section>
-       <h2>✔️</h2>
-       <p>object in app.jsx</p>
+       <h2>✔️Making an Object in App.jsx and mapping through it</h2>
+       <p>The Output:</p>
+       <img src="./images/book output.png" alt="">
+       <p>The <b>Object</b> in app.jsx---</p>
        <img src="./images/books1.png" alt="">
-       <p>function in app.jsx</p>
+       <p>Using the <b>Book tag</b> in app.jsx---</p>
        <img src="./images/book2.png" alt="">
-       <p>function in book.jsx</p>
-       <img src="./images/book3.png" alt="">
-       <p>function in eachBook.jsx</p>
+       <p>The <b>Book</b> function created in <b>book.jsx</b> where we <b>map</b> through the <b>object</b>---</p>
+       <img src="./images/book3.png" alt="" class="big-img">
+       <p>A <b>EachBook</b> function is made in <b>eachBook.jsx</b>----</p>
        <img src="./images/bbok4.png" alt="">
        <p></p>
-       <img src="./images/book output.png" alt="">
+       
     </section>
-    if we want to make something dynamic in my function then we use {   } -->app.jsx , color.jsx
+   
 </body>
 </html>

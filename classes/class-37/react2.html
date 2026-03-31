@@ -4,8 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>State, Effects and Data Fetching </title>
+     <style>
+        html{
+            font-size: 16px;
+        }
+        h1{
+            font-size: 2.5rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+        p,li,th,td{
+            font-size: 1.5rem;
+        }
+        
+        ol{
+            list-style: none;
+        }
+        b{
+            color:crimson;
+        }
+        i{
+            color:darkslateblue
+        }
+        header{
+            text-align: center;
+        }
+         .big-img{
+            width: 95%;
+        }
+        .img-w{
+            width:53%;
+          
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 7px;
+        }
+        header{
+            position:sticky;
+            top:0;
+            background-color: white;
+            z-index: 10;
+        }
+        ul{
+            list-style: none;
+        }
+        table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* prevents squishing */
+}
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+        
+        @media screen and (max-width:576px){
+            img{
+                width:98%;
+            }
+            
+             h1{
+            font-size: 2rem;
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+            p,li{
+            font-size: 1rem;
+        }
+        th, td {
+        font-size: 1rem;
+        padding: 5px;
+    }
+        }
+        
+        @media screen and (min-width:576px) and (max-width:992px) {
+            img{
+                width:98%;
+            }
+        }
+ 
+        </style>
 </head>
 <body>
+     <header>
+        <h1>State, Effects and Data Fetching</h1>
+        <h2><a href="../../index.html">GO TO INDEX➡️</a></h2>
+    </header>
+    <section>
+        <h1>✔️Fetching Api</h1>
+        <p>✅Here, we <b>fetched</b> the <b>api</b> and converted it into <b>json</b>. This is <b>stored</b> in a <b>countriesPromise</b> variable. <br><br>✅When we use <b>use</b> we <b>MUST</b> use <b>Suspense</b>. Suspense has a <b>fallback</b> where we can add a <b>spinner or loading text</b>. <br><br>✅<b>Inside </b>the <b>Suspense</b> we call the <b>Countries tag</b> which get from a function we have created and exported from another file. And inside the Countries tag we <b>handle</b> the <b>countriesPromise</b>.</p>
+        <img src="./images/fetching api.png" alt="" class="big-img">
+    </section>
+    <section>
+        <h1>✔️Handling the Api using <b>use</b></h1>
+        <p>✅First we created a <b>component folder</b> and inside the component folder we make the <b>Countries.jsx</b> file.</p>
+        <p>✅We <b>use</b> the <b>api</b> in this <b>Countries</b> function.</p>
+         <img src="./images/fetching api inside the components folder countries jsx.png" alt="">
+    </section>
+    <section>
+        <h1>✔️Toggling the button from Visitied to Not Visited using ternary operator</h1>
+        <p>✅Here, we are <b>toggling </b>the color to bg-aquamarine and color blue only when it is <b>visited</b>.</p>
+        <p>✅We used <b>ternary operatory</b> to conditionally render <b>visted and not visited</b>.</p>
+        <img src="./images/toggle color of btn.png" alt="" class="big-img">
+        <p>The <b>CSS</b>---</p>
+        <img src="./images/toggle color of btn css.png" alt="">
+    </section>
     
+    <section>
+       <h1>✔️useState</h1>
+       <p><b>useState</b> is used whenever we <b>need to do something</b>. Ex-toggling button. It is a <b>Hook</b>. It lets one <b>store and update data(state)</b> inside a component. <br><br>1️⃣Here, <b>visited</b> is the <b>state</b> which contains the <b>current value</b>. <br><br>2️⃣<b>setVisited</b> is the <b>setState</b> which is a fuunction that <b>updates the state</b>. <br><br>3️⃣And here the <b>false</b> inside the useState is the <b>initial value</b>. <br><br> Here, handleVisited function is used to update the setVisited.</p>
+         <img src="./images/useState handleVisited ternary operator.png" alt="" class="big-img">
+
+    </section>
+    
+   <section>
+    <h1>✔️Deploying on Netlify</h1>
+    <p>1️⃣Go to the <b>git bash terminal</b> and type <b>npm run build</b>.</p>
+    <p>2️⃣This will create a <b>dist</b> folder.</p>
+    <p>3️⃣We will <b>upload</b> this <b>dist folder</b> manually on the <b>netlify website</b>. We will get a link which we can customize.</p>
+    <p>4️⃣If we <b>change</b> the <b>code</b>, we need to <b>npm run build</b> AGAIN and upload the <b>dist folder</b> AGAIN. Make sure that we <b>UPLOAD INSIDE THE PROJECT THAT IS DEPLOYED</b> or we will get a completely new website link which we do not want.</p>
+   </section>
+   
 </body>
 </html>

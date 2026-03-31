@@ -4,15 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>React Ecosystem(NPM, Tailwind and Rechart)</title>
+     <style>
+        html{
+            font-size: 16px;
+        }
+        h1{
+            font-size: 2.5rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+        p,li,th,td{
+            font-size: 1.5rem;
+        }
+        
+        ol{
+            list-style: none;
+        }
+        b{
+            color:crimson;
+        }
+        i{
+            color:darkslateblue
+        }
+        header{
+            text-align: center;
+        }
+         .big-img{
+            width: 95%;
+        }
+        .img-w{
+            width:53%;
+          
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 7px;
+        }
+        header{
+            position:sticky;
+            top:0;
+            background-color: white;
+            z-index: 10;
+        }
+        ul{
+            list-style: none;
+        }
+        table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* prevents squishing */
+}
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+        
+        @media screen and (max-width:576px){
+            img{
+                width:98%;
+            }
+            
+             h1{
+            font-size: 2rem;
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+            p,li{
+            font-size: 1rem;
+        }
+        th, td {
+        font-size: 1rem;
+        padding: 5px;
+    }
+        }
+        
+        @media screen and (min-width:576px) and (max-width:992px) {
+            img{
+                width:98%;
+            }
+        }
+ 
+        </style>
 </head>
 <body>
+    <header>
+        <h1>NPM, Tailwind and Rechart</h1>
+        <h2><a href="../../index.html">GO TO INDEX➡️</a></h2>
+    </header>
+    
     make a vite project ---> go to tailwind doc ---> for vite 1. paste the npm install tailwindcss @tailwindcss/vite on vscode bash terminal 2. paste the neccesity plugins in vite.config.js just as document 3. we need to import the tailwind in the css file(app.css or index.css) 4. By chance the tailwind intellisense don't work just click cntrl + spacebar
 
     To add DaisyUi we install the daisyUi in terminal --->npm i -D daisyui@latest Then in the css file(app.css or index.css) add @plugin "daisyui";
 
-    For icons go to lucid icons. it has an installation guide. choose the npm one. then search ur icon. and add the jsx code as instructed.
+    For icons go to lucid icons. it has an installation guide. choose the npm one. then search ur icon. and add the jsx code as instructed. Or used React Icons.
 
     P.S. react extention pack vscode extension must. write rsc for component shortcut.
+
+    json file is to be stored in public folder.
+
+    recharts--> install according to guide(npm) ---> tooltip
+
+    axios js--->install axios(npm)
+
+    toastify ---> for notifications
+
+    react awesome componenets
 
 
 </body>
