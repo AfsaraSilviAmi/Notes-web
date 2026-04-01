@@ -78,7 +78,45 @@
         <h1>Local Storage</h1>
         <h2><a href="../../index.html">GO TO INDEX➡️</a></h2>
     </header>
-    local storage is inspect then application then find local storage
-    localStorage.setItem ,getItem, removeItem, clear, localStorage only stores string so to store object or array one must use stringify and parse
+
+    <section>
+        <h1>✔️Local Storage</h1>
+        <p>LocalStorage is a <b>browser storage</b> that -- <b>Stores data permanently </b>(until it is cleared), <b>saves data as key-value pairs</b> and can only <b>store strings</b>.</p>
+    </section>
+    <section>
+        <h1>🔍How to view Local Storage in Browser</h1>
+        <p>1️⃣Right click and then click <b>Inspect</b></p>
+        <p>2️⃣Go to the <b>Application tab</b>.</p>
+        <p>3️⃣Click on <b>Local Storage</b></p>
+        <p>4️⃣Select your site (key-value pairs might be seen)</p>
+    </section>
+    
+    <section>
+        <h1>✔️localStorage.setItem()</h1>
+        <p><b>localStorage.setItem()</b> is used to <b>save data</b>. Example--- <br><br><b>localStorage.setItem("name", "Ami");</b></p>
+    </section>
+    <section>
+        <h1>✔️localStorage.getItem()</h1>
+        <p><b>localStorage.getItem()</b> is used to <b>get the data</b>. Example--- <br><br><b>localStorage.getItem("name"); <br> <br> console.log(name);</b> <br><br> Output: Ami</p>
+    </section>
+
+     <section>
+        <h1>✔️localStorage.removeItem()</h1>
+        <p><b>localStorage.removeItem()</b> is used to <b>remove one item</b>. Example--- <br><br><b>localStorage.removeItem("name");</b></p>
+    </section>
+     <section>
+        <h1>✔️localStorage.clear()</h1>
+        <p><b>localStorage.clear()</b> is used to <b>clear Everything</b>. Example--- <br><br><b>localStorage.clear();</b></p>
+    </section>
+
+    <section>
+        <h1>⚠️Only Stores Strings!!</h1>
+        <p>In order to <b>store object or array</b> we must <b>convert</b> it.</p>
+        <h2>✅Store object/array</h2>
+        <p><b>const user = { name: "Ami", age: 24 }; <br> <br>localStorage.setItem("user", JSON.stringify(user));</b> //converts object or array into string using stringify</p>
+        <h2>✅Get object/array back</h2>
+        <p><b>const data = localStorage.getItem("user"); <br> <br>const user = JSON.parse(data);</b> //converts string into object using parse<br><br><b>console.log(user.name);</b> <br><br> Output: Ami</p>
+    </section>
+     
 </body>
 </html>
