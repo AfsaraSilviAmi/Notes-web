@@ -135,17 +135,30 @@
     <img src="./images/navlink-style.png" alt="" class="big-img">
    </section>
 
-   
-    Data Loading---> 
-    {
-        path: mobiles,
-        loader: () => fetch("api"),
-        component: Mobiles
-    }
-    then go to mobiles.jsx ---> const mobile = useLoaderData();
+   <section>
+    <h1>✔️Data Loading</h1>
+    <p>1️⃣Use <b>loader: () => fetch("api"),</b> on the <b>path</b> we need to load the data. In <b>main.jsx</b>---</p>
+    <img src="./images/loading-api.png" alt="" class="big-img">
+    <p>2️⃣Then go to the file (<b>Project.jsx</b>) with the path and use the <b>useLoaderData</b> method to get the api working in this page---</p>
+    <img src="./images/project-jsx.png" alt="">
+    <p><b>P.S</b> We can use <b>Suspense</b> but need to use <b>element</b> instaed of Component.</p>
+     <img src="./images/Suspense.png" alt="" class="big-img">
+    <p>The Output:</p>
+    <img src="./images/Data-loading-Output.png" alt="" class="big-img">
+   </section>
+  
+   <section>
+    <h1>✔️Mapping data</h1>
+    <img src="./images/map-data.png" alt="" class="big-img">
+    <p>The Output:</p>
+    <img src="./images/map-data-output.png" alt="" class="big-img">
 
-    using element we can add Suspense and we fetch data as ususal in React
+   </section>
+    
 
+   <section>
+    <h1>✔️Dynamic Routing</h1>
+   </section>
     Dynamic Routing---> 
     {
         path:users/:userId,
