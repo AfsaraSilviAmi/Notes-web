@@ -158,17 +158,22 @@
 
    <section>
     <h1>✔️Dynamic Routing</h1>
+    <p>For showing <b>details</b> for each div---</p>
+    <img src="./images/for-details.png" alt="" class="big-img">
+    <p>1️⃣We <b>link</b> the path ----</p>
+    <img src="./images/Link-dynamic-routing.png" alt="" class="big-img">
+    <p>2️⃣Make <b>ProjectDetails.jsx</b> that stores all details and where we can load the data.</p>
+    <p>3️⃣Fetch the data isn <b>main.jsx</b>----</p>
+    <img src="./images/dynamic-routing-main.png" alt="" class="big-img">
+    <p>We need to use <b>path: "project/:projectId"</b> which represents the <b>id</b>. We use the <b>params prop</b> for loading the data.</p>
+    <p>4️⃣In <b>ProjectDetails.jsx</b> we <b>load</b> the data using <b>useLoaderData</b>----</p>
+    <img src="./images/projectDeatils.png" alt="" class="big-img">
+    <p>Now, upon clicking the search details button we can see details for each.</p>
+    <p>The Output:</p>
+    <img src="./images/dynamic-route-output.png" alt="">
+    <img src="./images/dynamic-route-output2.png" alt="" class="big-img">
    </section>
-    Dynamic Routing---> 
-    {
-        path:users/:userId,
-        loader: ({params}) => fetch(`api/${params.userId}`),
-        component: UserDetails
-    }
-    (dyanmically getting users/1, users/2 etc)
-    then in Users.jsx componnet we have a Link to = {`/users/${user.id}`}
-    then in UseDetails.jsx--> const user = useLoaderData();
-
+   
 
     useNavigate
 
