@@ -114,7 +114,7 @@
 
     <p>In case of component--- </p> <p><b> { <br>
         path: 'app2' <br>
-        component: AppTwo <br>
+        Component: AppTwo <br>
     }
 </b></p>
     </section>
@@ -123,23 +123,19 @@
     <h1>✔️Nested Routing</h1>
     <p>1️⃣Make a component folder in src</p>
     <p>2️⃣Make Root.jsx, NavBar.jsx</p>
-    <p></p>
+    <p>3️⃣In <b>main.jsx</b>---</p>
+    <img src="./images/root.png" alt="">
+    <p>4️⃣In <b>Root.jsx</b> there is <b>NavBar Component</b> (this is <b>static</b>) and <b>Outlet component</b>. The <b>Outlet</b> component shows the children dynamically---</p>
+    <img src="./images/rootJsx.png" alt="">
+    <p>5️⃣Make <b>About.jsx, Project.jsx, Contact.jsx</b> in the component folder. Then in <b>main.jsx</b>---</p>
+    <img src="./images/nested-main.png" alt="">
+    <p>6️⃣We can use <b>Link to</b> too but for this example I used <b>NavLink to</b> in <b>NavBar.jsx</b>---</p>
+    <img src="./images/navlink.png" alt="">
+    <p>7️⃣Only <b>NavLink</b> can be <b>styled</b> (not Link). Useful in <b>toggling</b>---</p>
+    <img src="./images/navlink-style.png" alt="" class="big-img">
    </section>
 
-    Nested Routing ---> make a coponent folder---> make Root.jsx(It has Header and Outlet(it is used to indicate where the children will be rendered)),Header.jsx(this is static), Home.jsx, Mobiles.jsx, Laptops.jsx
-    {
-        path:'/'
-        Component:Root 
-        children: [
-        {index:true, Component: Home},
-        {path:'mobiles', Component: Mobiles},
-        {path:'laptops', Component: Laptops}
-        
-        ]
-    }
-
-    Link to &ltLink to = "/mobiles" ---> for navigation/ NavLink to(can add active CSS best for toggling)
-
+   
     Data Loading---> 
     {
         path: mobiles,
