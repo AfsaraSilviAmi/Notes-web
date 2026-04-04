@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 16px;
+        }
+        h1{
+            font-size: 2.5rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+        p,li,th,td{
+            font-size: 1.5rem;
+        }
+        
+        ol{
+            list-style: none;
+        }
+        b{
+            color:crimson;
+        }
+        i{
+            color:darkslateblue
+        }
+        header{
+            text-align: center;
+        }
+         .big-img{
+            width: 95%;
+        }
+        .img-w{
+            width:53%;
+          
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 7px;
+        }
+        header{
+            position:sticky;
+            top:0;
+            background-color: white;
+            z-index: 10;
+        }
+        ul{
+            list-style: none;
+        }
+        table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* prevents squishing */
+}
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+        
+        @media screen and (max-width:576px){
+            img{
+                width:98%;
+            }
+            
+             h1{
+            font-size: 2rem;
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+            p,li{
+            font-size: 1rem;
+        }
+        th, td {
+        font-size: 1rem;
+        padding: 5px;
+    }
+        }
+        
+        @media screen and (min-width:576px) and (max-width:992px) {
+            img{
+                width:98%;
+            }
+        }
+ 
+        </style>
+</head>
+<body>
+     <header>
+        <h1>React Router DOM</h1>
+        <h2><a href="../../index.html">GO TO INDEX➡️</a></h2>
+    </header>
+
+    <section>
+        <h1>✔️Setting up React Router</h1>
+        <p>1️⃣After making a vite project, go to <b>React Router website</b>. And according to documentaion(Data Mode) paste <b>npm i react-router</b> on the VSCode <b>bash terminal</b>.</p>
+        <p>2️⃣The according to documentation write the code like the one below in <b>main.jsx</b>--- </p>
+         <img src="./images/react router setup.png" alt="">
+        <p> As you can see, the <b>App component </b>got <b>replaced</b> by <b>RouterProvider Component</b>.
+        </p>
+    </section>
+    
+    <section>
+        <h1>✔️createBrowserRouter</h1>
+        <p>We can make routes by createBrowserRouter. It is an <b>array</b> that can have <b>multiple objects</b>. Each object at least has 2 properties--- <b>path</b> and <b>element/component</b>. </p>
+        <p>In case of element---</p>
+        <p><b> { <br>
+        path:'app' <br>
+        element: &ltApp>&lt/App> <br>
+    }</b></p>
+
+    <p>In case of component--- </p> <p><b> { <br>
+        path: 'app2' <br>
+        component: AppTwo <br>
+    }
+</b></p>
+    </section>
+
+   <section>
+    <h1>✔️Nested Routing</h1>
+    <p>1️⃣Make a component folder in src</p>
+    <p>2️⃣Make Root.jsx, NavBar.jsx</p>
+    <p></p>
+   </section>
+
+    Nested Routing ---> make a coponent folder---> make Root.jsx(It has Header and Outlet(it is used to indicate where the children will be rendered)),Header.jsx(this is static), Home.jsx, Mobiles.jsx, Laptops.jsx
+    {
+        path:'/'
+        Component:Root 
+        children: [
+        {index:true, Component: Home},
+        {path:'mobiles', Component: Mobiles},
+        {path:'laptops', Component: Laptops}
+        
+        ]
+    }
+
+    Link to &ltLink to = "/mobiles" ---> for navigation/ NavLink to(can add active CSS best for toggling)
+
+    Data Loading---> 
+    {
+        path: mobiles,
+        loader: () => fetch("api"),
+        component: Mobiles
+    }
+    then go to mobiles.jsx ---> const mobile = useLoaderData();
+
+    using element we can add Suspense and we fetch data as ususal in React
+
+    Dynamic Routing---> 
+    {
+        path:users/:userId,
+        loader: ({params}) => fetch(`api/${params.userId}`),
+        component: UserDetails
+    }
+    (dyanmically getting users/1, users/2 etc)
+    then in Users.jsx componnet we have a Link to = {`/users/${user.id}`}
+    then in UseDetails.jsx--> const user = useLoaderData();
+
+
+    useNavigate
+
+    for a 404 ereor use path:'*'
+
+</body>
+</html>
