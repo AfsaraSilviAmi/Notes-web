@@ -28,5 +28,15 @@
 
     we can create our custome nested layout for dashboard or something. make sure the childrean is at the right place of layout
 
+    Image tag
+
+    Metadata
+
+    not-found.jsx file can be created for custom 404 page
+
+    for active navlinks use const pathname = usePathname(). plus remeber to use 'use client' at the top of the file for using usePathname hook. need to use className={pathname === '/' ? 'text-blue-400' : ''} for active links
+
+    google font can be used by importing it and then use className={font.className} in the element. for example, if we import inter font then we can use className={inter.className} in the element to apply the font. check documentation for more details.
+
 </body>
 </html>
