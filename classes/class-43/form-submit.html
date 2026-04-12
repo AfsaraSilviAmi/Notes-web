@@ -1,1 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Context</title>
+      <style>
+        html{
+            font-size: 16px;
+        }
+        h1{
+            font-size: 2.5rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+        p,li,th,td{
+            font-size: 1.5rem;
+        }
+        
+        ol{
+            list-style: none;
+        }
+        b{
+            color:crimson;
+        }
+        i{
+            color:darkslateblue
+        }
+        header{
+            text-align: center;
+        }
+         .big-img{
+            width: 95%;
+        }
+        .img-w{
+            width:53%;
+          
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 7px;
+        }
+        header{
+            position:sticky;
+            top:0;
+            background-color: white;
+            z-index: 10;
+        }
+        ul{
+            list-style: none;
+        }
+        table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* prevents squishing */
+}
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+        
+        @media screen and (max-width:576px){
+            img{
+                width:98%;
+            }
+            
+             h1{
+            font-size: 2rem;
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+            p,li{
+            font-size: 1rem;
+        }
+        th, td {
+        font-size: 1rem;
+        padding: 5px;
+    }
+        }
+        
+        @media screen and (min-width:576px) and (max-width:992px) {
+            img{
+                width:98%;
+            }
+        }
+ 
+        </style>
+</head>
+<body>
+     <header>
+        <h1>How to get Details, Install(add), Uninstall(delete), Sort and Search in React</h1>
+        <h2><a href="../../index.html">GO TO INDEX➡️</a></h2>
+    </header>
+
+    <section>
+        <h1>☑️Main.jsx</h1>
+        <p>In main.jsx, we used a <b>id:"root"</b> on the parent and <b>load</b> the <b>data</b> there. So, that the data is assesible to <b>all it's children</b>. To <b>call the data</b> all we need to use is <b>const apps = useRouteLoaderData("root");</b></p>
+        <img src="./images/main-jsx.png" alt="">
+    </section>
+
+    <section>
+        <h1>☑️For Details</h1>
+        <p>1️⃣In <b>AppDetails.jsx</b> we used <b>useParams</b>. <br><br>2️⃣ And then we load the data and use <b>find</b> to <b>compare</b> the <b>id</b> in the<b> data loaded</b> to the <b>id in useParam</b>. The <b>Param data id</b> in converted to **<b>Number</b> from string. And all of it stored in the constant <b>appDet</b>. <br><br>3️⃣Then the <b>appDet</b> is used as the dynamic way of getting the details.</p>
+        <img src="./images/app-details.png" alt="">
+        <p>4️⃣In order to get detail upon clicking on the card we need to <b>Link</b> it. Make sure of the <b>path</b> that is dynamic in nature and leads to the <b>id</b>.</p>
+        <img src="./images/Link.png" alt="" class="big-img">
+    </section>
+
+    <section>
+        <h1>☑️Installation (add to another page upon clicking a button)</h1>
+        <p>1️⃣First we need to make a <b>Context file like - InstallContext.jsx</b>. <br><br>2️⃣Then we need to <b>createContext</b> and <b>export</b> it. <br><br>3️⃣We used the <b>{children}</b> as prop on InstallProvider. <br><br>4️⃣And use <b>InstallContext.Provider</b> and <b>wrap </b>it on the <b>{chidren}</b>. <br><br>5️⃣ Here we we used <b>useState</b> for app installation. The <b>initial value</b> of useState is an <b>empty array</b>. <br><br>6️⃣ We took a function named <b>installApp</b> which had <b>app</b> as prop. Then we <b>setInstallledApps</b> where we used the <b>prev</b> value. We used <b>find</b> for seeing if the installed app already exist or not. <br>➡️If the app exists then <b>return prev</b> that is, keep the previous list. <br>➡️If it does <b>not</b> exist the we keep a copy of prev and add the new app that is, <b>[...prev, app]</b>.</p>
+        <img src="./images/install-context.png" alt="" class="big-img">
+        <p>7️⃣In <b>main.jsx</b> we wrapped the <b>InstallProvider</b> around the <b>RouterProvider</b>.</p>
+        <img src="./images/Install-main-jsx.png" alt="">
+        <p>8️⃣In <b>AppDetails.jsx</b>, we used <b>useContext</b> for the <b>InstallContext</b>. And we <b>destructured</b> <b>installedApps</b> and <b>installApp</b></p>
+        <p>9️⃣Then we check whether the app is installed or not using <b>find</b> on the <b>installedApps</b> list.</p>
+        <p>🔟Then we used the <b>handleInstall</b> function to handle the install button where in <b>installApp</b> function the <b>appDet</b> is <b>send</b></p>
+        <img src="./images/Install-app-detail.png" alt="" class="big-img">
+        <p>1️⃣1️⃣ Here, <b>isInstalled</b> is used to <b>disable </b>the button and for <b>conditional rendering</b>. We used <b>onClick</b> to handle the install.</p>
+        <img src="./images/install-app-detail-btn.png" alt="" class="big-img">
+        <p>1️⃣2️⃣ The we use <b>useContext</b> and destructure <b>installedApps</b> (current list of installed apps). Use that installedApps to <b>map</b> them on the installation page.</p>
+        <img src="./images/install-jsx.png" alt="" class="big-img">
+    </section>
+
+    <section>
+        <h1>☑️Uninstall App (deleting)</h1>
+        <p>1️⃣Here, in <b>InstallContext.jsx</b>, we took a <b>uninstallApp</b> function with an <b>id</b> as prop. There we <b>update the installed apps</b> using <b>setInstalledApps</b> and from the <b>prev</b> (current list before the update) installed app list <b>filter</b> using <b>id</b>. So, it only <b>keeps the app that are not equal to the id matched</b>.</p>
+        <img src="./images/installContext-uninstall.png" alt="" class="big-img">
+        <p>2️⃣In <b>InstallContext.jsx</b>, we pass the <b>uninstallApp</b> as <b>value</b> in the InstallContext.Provider.</p>
+        <img src="./images/Uninstall2.png" alt="">
+        <p>3️⃣In <b>Installed.jsx</b>, we use the <b>useContext</b> and destructure <b>uninstallApp</b>.</p>
+        <img src="./images/Uninstall3.png" alt="" class="big-img">
+        <p>4️⃣Here we used <b>onClick</b> on the uninstall button and call the <b>uninstallApp function</b> and pass the <b>app id</b>.</p>
+        <img src="./images/Uninstall4.png" alt="" class="big-img">
+
+    </section>
+
+    <section>
+        <h1>☑️Sorting</h1>
+        <p>1️⃣As we want to <b>sort our installed apps</b>, in <b>Installed.jsx</b>, </p>
+        <img src="./images/Sort1.png" alt="" class="big-img">
+        <p></p>
+        <img src="./images/sort2.png" alt="" class="big-img">
+        <p></p>
+        <img src="./images/sort3.png" alt="" class="big-img">
+    </section>
+
+</body>
+</html>
 Check context api and custom hook -- module 38
+
