@@ -27,7 +27,18 @@
     Output: <img src="./images/themeOutput1.png" alt="">
 
     For Server ---> Make folder named data in src and store the json files there
-    Make another folder in src named lib where we will store the js files
+    Make another folder in src named lib where we will store the js files. Like task.js--> 
+    <img src="./images/task1.png" alt="">
+    then in the task folder's page.jsx --->
+    <img src="./images/task2.png" alt="">
+
+    We can create a modal form by creating a AddTask component and placing it in the task folder's page.jsx---> <img src="./images/task3.png" alt="">
+    As for the modal, make sure the submit button is in the form tag. 
+    Then we can create an actions.js file in the lib folder (doc can be found in Next.js docs Mutating data)--> <img src="./images/form1.png" alt="">
+    In task folder's page.jsx ---> we pass the createATask component in AddTask component <img src="./images/form2.png" alt="">
+    And in AddTask.jsx inside form tag we must have actions={createATask}--> <img src="./images/form3.png" alt=""> And make sure that the form input filed have name = "title" etc. <img src="./images/form4.png" alt=""> and the submit button must have type ="submit" <img src="./images/form5.png" alt="">
+    Also to show the card in the task page in task.js <img src="images/form6.png" alt=""> then in action.js <img src="./images/form7.png" alt="">
+
 
 
     Modal Contact Form
