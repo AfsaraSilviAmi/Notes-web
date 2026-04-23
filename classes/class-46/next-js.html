@@ -4,61 +4,279 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Next.js Foundation and Routing</title>
+     <style>
+        html{
+            font-size: 16px;
+        }
+        h1{
+            font-size: 2.5rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+        p,li,th,td{
+            font-size: 1.5rem;
+        }
+        
+        ol{
+            list-style: none;
+        }
+        b{
+            color:crimson;
+        }
+        i{
+            color:darkslateblue
+        }
+        header{
+            text-align: center;
+        }
+        .big-img{
+            width: 95%;
+        }
+        .img-w{
+            width:53%;
+          
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 7px;
+        }
+        header{
+            position:sticky;
+            top:0;
+            background-color: white;
+            z-index: 10;
+        }
+        ul{
+            list-style: none;
+        }
+        table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* prevents squishing */
+}
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+        
+        @media screen and (max-width:576px){
+            img{
+                width:98%;
+            }
+            
+             h1{
+            font-size: 2rem;
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+            p,li{
+            font-size: 1rem;
+        }
+        th, td {
+        font-size: 1rem;
+        padding: 5px;
+    }
+        }
+        
+        @media screen and (min-width:576px) and (max-width:992px) {
+            img{
+                width:98%;
+            }
+        }
+ 
+        </style>
 </head>
 <body>
-    Next.js 
-    Search for Next.js by Vercel then in your terminal, paste npx create-next-app@latest and then answer the questions by agreeing to customize. don't need typescript and need Eslint and say no to default something customization.
-
-    For making routes in app make a folder named about or something else and inside it make a file named page.jsx but when using rsc change the component name to something else like AboutPages 
+     <header>
+        <h1>Next.js Foundation and Routing</h1>
+        <h2><a href="../../index.html">GO TO INDEX➡️</a></h2>
+    </header>
+    <section>
+        <h1>✔️Next.js</h1>
+        <p>Next.js is a popular <b>React framework</b> used to build modern web applications.</p>
+    </section>
+   <section>
+     <h1>✔️Setting up Next.js</h1>
+     <p>1️⃣Search for Next.js by Vercel <br><br>2️⃣Then in VScode terminal, paste <b>npx create-next-app@latest</b> and then answer the questions by agreeing to customize (we don't need typescript, we need Eslint and say no to default customization)</p>
+   </section>
+   
+   <section>
+    <h1>✔️Routing</h1>
+    <p>For making <b>Routes</b>, in <b>app folder</b> make a <b>folder</b> (in this example it's about) and inside this folder make a <b>file named page.jsx</b> but when using <b>rsc</b> do not name the component page use a different name such as AboutPages.</p>
+     <img src="./images/src.png" alt="">
+   </section>
     
-    <img src="./images/src.png" alt="">
+    <section>
+        <h1>✔️Nested Routing</h1>
+        <p>Nested Routing is also possible in Next.js. For that, we can create a <b>folder (developers) inside a (about) folder</b> and inside that <b>new folder</b> create a <b>folder inside the about folder</b>.</p>
+         <img src="./images/nesting.png" alt="">
+         <img src="./images/developers2.png" alt="">
+    </section>
 
-    Nested Routing is also possible in Next.js. For that, you can create a folder inside the about folder and name it something like developers and inside it create a page.jsx file. 
+   <section>
+    <h1>✔️For Components</h1>
+    <p>
+    For making <b>components</b>, make the <b>component folder</b> inside <b>scr</b> NOT app and just like react we can make files like NavBar.jsx and Footer.jsx. And place this component in <b>layout.js file</b> and place it above or below <b>{children}</b></p>
+   </section>
 
-    <img src="./images/nesting.png" alt="">
-    <img src="./images/devgielopers2.png" alt="">
+   <section>
+    <h1>✔️Setting up DaisyUi in Next.js</h1>
+    <p> For DaisyUI we need to <b>intall</b> it and <b>place the plugin in global.css file under the tailwind import</b>.</p>
+   </section>
 
-    For making components, make the coponent folder inside scr NOT app and just like react we can make files like NavBar.jsx and Footer.jsx. And place this component in layout.js file and place it just above or below {children}
+   <section>
+    <h1>✔️Fetching</h1>
+      <img src="./images/fetch.png" alt="" class="big-img">
+   </section>
 
-    For DaisyUI we need to intall it and place the plugin in global.css file under the tailwind import.
-
-    Link href
-
-    For fetching---
-    <img src="./images/fetch.png" alt="">
-
-    to make dynamic routes, we can make a folder named [blogid] inside blog folder and inside it make a page.jsx file. in that page we need params async await just like in documentaion
-      <img src="./images/userid.png" alt="">
-      In user folder---
-      <img src="./images/onclick.png">
-      In [userId] folder---
-      <img src="./images/params.png" alt="">
-    we can create our custome nested layout for dashboard or something. make sure the childrean is at the right place of layout
-
-    Image tag in next.js cannot be used  with referencing it in next.config.mjs. make sure to add alt, width and height in the Image tag----
-    <img src="./images/image-opt.png" alt="">
-
-    Metadata
-
-    not-found.jsx file can be created for custom 404 page
-
-    for active navlinks use const pathname = usePathname(). plus remeber to use 'use client' at the top of the file for using usePathname hook. need to use className={pathname === '/' ? 'text-blue-400' : ''} for active links
-    <img src="./images/navlink.png">
-
-    google font can be used by importing it and then use className={font.className} in the element. for example, if we import inter font then we can use className={inter.className} in the element to apply the font. check documentation for more details.
-
-    useStare, useEffect, onClick etc this need use client
-
-    any api data needs localhost link. we can install json server. according to doc make a file in root folder. then add the json data. can add multiple json data. don't forget to make a server property in config
+   <section>
+    <h1>✔️Dynamic Routing</h1>
+    <p>To make <b>dynamic routes</b>, we can make a <b>folder</b> named (according to example) <b>[userId]</b> inside <b>user folder</b> and inside it we will make a <b>page.jsx</b> file. In that page we need <b>params, async, await</b> just like in documentaion.</p>
+     <img src="./images/userid.png" alt="">
+    <p>In <b>user</b> folder---</p>
+      <img src="./images/onclick.png" class="big-img">
+     <p> In <b>[userId]</b> folder---</p>
+      <img src="./images/params.png" alt="" class="big-img">
+   </section>
     
-    ISR Vs SSG Vs Dynamic
+   <section>
+    <h1>✔️Custom nested layout</h1>
+    <p>We can create our <b> custom nested layout</b> for dashboard or something. Make sure the <b>children</b> is at the right place of layout.</p>
+   </section>
+
+   <section>
+    <h1>✔️Image Tag</h1>
+    <p><b>Image</b> tag in Next.js <b>cannot be used without referencing</b> it in <b>next.config.mjs</b>.Make sure to add <b>alt, width and height</b> in the Image tag.</p>
+    <p>In <b>next.config.mjs</b>---</p>
+    <img src="./images/image-opt.png" alt="" class="big-img">
+   </section>
+
+   <section>
+    <h1>✔️Custom 404 Page</h1>
+    <p><b>not-found.jsx</b> file can be created for Custom 404 page.</p>
+   </section>
+     
+     
+   <section>
+    <h1>✔️Active Navlinks</h1>
+    <p>For <b>active navlinks</b> use <b>const pathname = usePathname()</b>. Plus remember to use <b>'use client'</b> at the <b>top</b> of the file for using <b>usePathname hook</b>. We need to use <b>className={pathname === '/' ? 'text-blue-400' : ''}</b> for active links.</p>
+    <img src="./images/navlink.png" class="big-img">
+   </section>
+
+    <section>
+        <h1>✔️Google Font</h1>
+        <p>Google font can be used by <b>importing</b> it and then using <b>className={font.className}</b> in the element. For example, if we import <b>inter font</b> then we can use <b>className={inter.className}</b> in the element to apply the font. Check documentation for more details.</p>
+    </section>
+
+
+    <section>
+        <h1>✔️use client</h1>
+        <p>useState, useEffect, onClick etc needs <b>use client</b> on top of the file. It is better to seperate client component from server component. All components are <b>server</b> by <b>default</b>.</p>
+    </section>
+
+   <section>
+    <h1>✔️Api data Needing Localhost Link</h1>
+    <p>Any api data needs localhost link. So, we need to go to the json-server website. <br><br>1️⃣We can <b>install json server</b> using
+        <b>npm i json-server</b> in the terminal. <br><br>2️⃣Then, we will make a <b>file in root</b> where we will have the <b>json data</b>. We can <b>add multiple json data</b> in one file. <br><br>3️⃣We must make a <b>server property</b>.In <b>package.json</b> file, we will aee a <b>script</b> objects where we will add a <b>server</b> property like this <b>server: "json-server --watch db.json --port 5000"</b>. <br><br>4️⃣Then, we use <b>npm run server</b> in terminal or command prompt.</p>
+   </section>
     
-    cache --> no-store (don't store cache is dynamically rendered)
-          ---> force-cache (stores cache)
 
-    next: revalidate (ISR) (can tell after how many secords u wanna render)
+   <section>
+    <h1>✔️ISR Vs SSG Vs Dynamic</h1>
+    <div class="table-container">
+<table>
+    <thead>
+        <tr>
+            <th>Feature</th>
+            <th>SSG (Static Site Generation)</th>
+            <th>ISR (Incremental Static Regeneration)</th>
+            <th>Dynamic Rendering (SSR)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>When HTML is generated</td>
+            <td>At build time</td>
+            <td>At build time + regenerated after some time</td>
+            <td>On every request</td>
+        </tr>
+        <tr>
+            <td>Speed</td>
+            <td>Very fast</td>
+            <td>Fast</td>
+            <td>Slower than SSG/ISR</td>
+        </tr>
+        <tr>
+            <td>Data freshness</td>
+            <td>Static (doesn't change unless rebuild)</td>
+            <td>Updated after a set time (revalidate)</td>
+            <td>Always fresh</td>
+        </tr>
+        <tr>
+            <td>Server load</td>
+            <td>Very low</td>
+            <td>Low</td>
+            <td>High</td>
+        </tr>
+        <tr>
+            <td>Use case</td>
+            <td>Blogs, docs, portfolios</td>
+            <td>News sites, product pages</td>
+            <td>Dashboards, user-specific data</td>
+        </tr>
+        <tr>
+            <td>Example</td>
+            <td>Pre-built blog page</td>
+            <td>Product page updating every 10s</td>
+            <td>User profile page</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+   </section>
+   
+    <section>
+        <h1>✔️cache: "no-store" Vs cache: "force-cache" Vs revalidate</h1>
+        <div class="table-container">
+<table>
+    <thead>
+        <tr>
+            <th>Option</th>
+            <th>What it does</th>
+            <th>Rendering Type</th>
+            <th>Use Case</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><b>cache: 'no-store'</b></td>
+            <td><b>Does not cache data</b>, fetch runs on every request</td>
+            <td><b>Dynamic</b> (SSR)</td>
+            <td><b>Real-time data</b> (dashboard, user data)</td>
+        </tr>
+        <tr>
+            <td><b>cache: 'force-cache'</b></td>
+            <td>Caches data and reuses it</td>
+            <td><b>Static</b> (SSG)</td>
+            <td>Static content (blogs, docs)</td>
+        </tr>
+        <tr>
+            <td><b>next: { revalidate: 10 }</b></td>
+            <td><b>Re-fetches data</b> after <b>X</b>(10) <b>seconds</b></td>
+            <td>ISR</td>
+            <td>Content that updates occasionally (news, products)</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+    </section>
+    
+    
+    
 
-
+ Metadata
 
 </body>
 </html>

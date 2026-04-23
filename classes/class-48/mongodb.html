@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Authintication checks whether you are the right person or not
+    
+    Go to Better Auth website and do installation and file making same as doc
+    1.Better Auth install using npm install better-auth
+    2.Create .env file in root and write 
+    <img src="./images/step2.png" alt="">
+    3.create lib folder in src and make a auth.js file
+    4.install mongobd using npm install mongodb
+    5.install mongodb adapter using npm install @better-auth/mongo-adapter
+    6.finish the auth.js work
+    <img src="./images/step6.png" alt="">
+    
+    7.Go to Mongobd atlas
+    8.Sign Up
+    9.Go to Database and network and make a user (save user name and password as comments)
+    10.Go to cluster-->click connect--> click driver  --> copy link
+    11. with AUTH_DB_URI variable paste the link and instead of the bd_password tag paste the password in env
+    <img src="./images/step11.png" alt="">
+    12. and in auth.js we have to new MongoClient(process.env.AUTH_DB_URI)
+    <img src="./images/step12.png" alt="">
+    13.Create a api folder in app, auth folder in api, [...all] folder in auth and finally in [...all] create a file named node.js then copy paste this (BetterAuth Step-7) -- 
+    <img src="./images/step13.png" alt="">
+    14. in lib folder create a auth-client.js filte and paste point 8
+    <img src="./images/step14.png" alt="">
+
+    For sign up --- (made a auth folder is app and in auth folder made a signup folder which has a page.jsx)
+    <img src="./images/signup.png" alt="">
+    P.S: In Cluster ---> Browse Collection ---> will show cluster which should have my data of filling the form but if it does not show then go to database and network then add ip adress 0.0.0.0/0
+
+    for callback in signUp use const router=useRouter() (make sure the useRouter is imported from navigation) and onSuccess =()=>{router.push("/")}
+    <img src="./images/signupcallback.png" alt="">
+
+    signin is almoast same
+
+    For logout and accesing session
+    <img src="./images/logout.png" alt="">
+
+    Authorization
+</body>
+</html>
