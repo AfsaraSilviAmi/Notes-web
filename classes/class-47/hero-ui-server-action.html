@@ -4,33 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     <style>
+        html{
+            font-size: 16px;
+        }
+        h1{
+            font-size: 2.5rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+        p,li,th,td{
+            font-size: 1.5rem;
+        }
+        
+        ol{
+            list-style: none;
+        }
+        b{
+            color:crimson;
+        }
+        i{
+            color:darkslateblue
+        }
+        header{
+            text-align: center;
+        }
+        .big-img{
+            width: 95%;
+        }
+        .img-w{
+            width:53%;
+          
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 7px;
+        }
+        header{
+            position:sticky;
+            top:0;
+            background-color: white;
+            z-index: 10;
+        }
+        ul{
+            list-style: none;
+        }
+        table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* prevents squishing */
+}
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+        
+        @media screen and (max-width:576px){
+            img{
+                width:98%;
+            }
+            
+             h1{
+            font-size: 2rem;
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+            p,li{
+            font-size: 1rem;
+        }
+        th, td {
+        font-size: 1rem;
+        padding: 5px;
+    }
+        }
+        
+        @media screen and (min-width:576px) and (max-width:992px) {
+            img{
+                width:98%;
+            }
+        }
+ 
+        </style>
 </head>
 <body>
-    HeroUI documentation ---> install using npm i @heroui/styles @heroui/react --> paste @import "@heroui/styles"; in global CSS under @import "tailwindcss";
-
-    For themes ---> npm install next-themes ---> to use it make a providers folder in src and acoording to documentation do it
-    In providers folder make a file and have this code --->
-    <img src="./images/theme1.png" alt="">
-    In layout.js --->
-    <img src="./images/theme2.png" alt="">
-    Remove everything from global.css and add this --->
-    <img src="./images/theme3.png" alt="">
-    Now in Component folder make this file according to documentation --->
-    <img src="./images/theme4.png" alt="">
-    Then we can add this ThemeToggle component in our NavBar.
+     <header>
+        <h1>HeroUI + Server Actions and Optimization</h1>
+        <h2><a href="../../index.html">GO TO INDEX➡️</a></h2>
+    </header>
+    <section>
+        <h1>✔️HeroUI setup</h1>
+        <p>From HeroUi website documentation <b>install</b> heroui component using <b> npm i @heroui/styles @heroui/react</b> in the terminal. Then, <b>paste @import "@heroui/styles";</b> in the <b>global.css file</b> under @import "tailwindcss";</p>
+    </section>
     
-    For making a switching effect for theme we can --->
-    Make sure to install gravity ui icons using npm i @gravity-ui/icons
-    Then search switch in heroui and pick one and paste in for ThemeToggle component -->
-    <img src="./images/theme5.png" alt="">
+    <section>
+        <h1>✔️Themes</h1>
+        <p>1️⃣For themes, install themes using <b>npm install next-themes</b>. <br><br> 2️⃣To use it, make a <b>providers</b> folder in <b>src</b> and according to the documentation make a <b>file</b> in the providers folder and have this code there---</p>
+         <img src="./images/theme1.png" alt="">
+         <p>3️⃣Then, in <b>layout.js</b>---</p>
+         <img src="./images/theme2.png" alt="" class="big-img">
+         <p>4️⃣Then, remove everything from <b>global.css</b> and add this---</p>
+          <img src="./images/theme3.png" alt="">
+          <p>5️⃣Now, in the <b>Component folder</b> make this file according to documentation---</p>
+          <img src="./images/theme4.png" alt="" class="big-img">
+          <p>6️⃣Then, we can add this <b>ThemeToggle component</b> in our Navbar. And for a <b>switching effect we can do this</b>---</p>
+          <img src="./images/theme5.png" alt="" class="big-img">
+          <p>But make sure to <b>install gravity ui icons</b> using <b>npm i @gravity-ui/icons</b> for the icons. Then, search <b>switch</b> in <b>heroUi</b> to pick one and <b>paste</b> it in the <b>ThemeToggle component</b>.</p>
+          <p>OUTPUT:</p>
+          <img src="./images/themeOutput1.png" alt="">
+    </section>
 
-    Output: <img src="./images/themeOutput1.png" alt="">
+    <section>
+        <h1>✔️Server Action</h1>
+        <p>For Server, make a <b>folder</b> named <b>data</b> in <b>src</b> and store the <b>json files</b> there. Also make another <b>folder</b> named <b>lib</b> in <b>src</b> where we will store the <b>js</b> files. Like <b>task.js</b>---</p>
+         <img src="./images/task1.png" alt="">
+         <p>Then in the <b>task folders's page.jsx</b>---</p>
+           <img src="./images/task2.png" alt="">
+    </section>
 
-    For Server ---> Make folder named data in src and store the json files there
-    Make another folder in src named lib where we will store the js files. Like task.js--> 
-    <img src="./images/task1.png" alt="">
-    then in the task folder's page.jsx --->
-    <img src="./images/task2.png" alt="">
+    
+  
 
     We can create a modal form by creating a AddTask component and placing it in the task folder's page.jsx---> <img src="./images/task3.png" alt="">
     As for the modal, make sure the submit button is in the form tag. 
