@@ -112,7 +112,7 @@
           <img src="./images/theme5.png" alt="" class="big-img">
           <p>But make sure to <b>install gravity ui icons</b> using <b>npm i @gravity-ui/icons</b> for the icons. Then, search <b>switch</b> in <b>heroUi</b> to pick one and <b>paste</b> it in the <b>ThemeToggle component</b>.</p>
           <p>OUTPUT:</p>
-          <img src="./images/themeOutput1.png" alt="">
+          <img src="./images/themeOutput1.png" alt="" class="big-img">
     </section>
 
     <section>
@@ -123,18 +123,25 @@
            <img src="./images/task2.png" alt="">
     </section>
 
-    
-  
+    <section>
+        <h1>✔️Modal form</h1>
+        <p>1️⃣We can create a modal form by creating a <b>AddTask component</b> and placing it in the <b> task folder's page.jsx</b>---</p>
+        <img src="./images/task3.png" alt="" class="big-img">
+        <p>2️⃣As for the modal, make sure the <b>submit button</b> is in the <b> form tag</b>. Then we can create an <b>actions.js file</b> in the <b>lib folder</b> (document can be found in Next.js docs for Mutating data)---</p>
+        <img src="./images/form1.png" alt="">
+        <p>3️⃣In <b>task folder's page.jsx</b> we pass the <b>createATask component</b> in <b>AddTask component</b>---</p>
+        <img src="./images/form2.png" alt="" class="big-img">
+        <p>4️⃣Then in <b>AddTask.jsx</b> inside <b>form tag</b> we must have <b>actions={createATask}</b>---</p>
+        <img src="./images/form3.png" alt="" class="big-img">
+        <p>5️⃣And make sure that the form <b>input field</b> have a <b>name</b> property like name ="title", name= "email" etc---</p>
+           <img src="./images/form4.png" alt="" class="big-img">
+           <p>6️⃣And the <b>submit button</b> must have the <b>type = "submit"</b>----</p>
+          <img src="./images/form5.png" alt="">
+          <p>7️⃣Also inorder to show the <b>card</b> in the <b>task page</b> we should have this code in <b>task.js</b> file---</p>
+          <img src="images/form6.png" alt="">
+          <p>8️⃣And finally in <b>action.js</b> file---</p>
+          <img src="./images/form7.png" alt="">
+    </section>
 
-    We can create a modal form by creating a AddTask component and placing it in the task folder's page.jsx---> <img src="./images/task3.png" alt="">
-    As for the modal, make sure the submit button is in the form tag. 
-    Then we can create an actions.js file in the lib folder (doc can be found in Next.js docs Mutating data)--> <img src="./images/form1.png" alt="">
-    In task folder's page.jsx ---> we pass the createATask component in AddTask component <img src="./images/form2.png" alt="">
-    And in AddTask.jsx inside form tag we must have actions={createATask}--> <img src="./images/form3.png" alt=""> And make sure that the form input filed have name = "title" etc. <img src="./images/form4.png" alt=""> and the submit button must have type ="submit" <img src="./images/form5.png" alt="">
-    Also to show the card in the task page in task.js <img src="images/form6.png" alt=""> then in action.js <img src="./images/form7.png" alt="">
-
-
-
-    Modal Contact Form
 </body>
 </html>
