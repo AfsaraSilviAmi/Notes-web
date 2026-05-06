@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    JavaSrcipt VS Node.js ---> programming language || JS runtime environment, Limited sustem access || Full time access
+    Node.js is single threaded but non-blocking and it manages event loop
+
+    Express.js ---> framework for node.js
+    Node.js Vs Express.js
+    Why do we need Express.js
+
+    SQL VS noSQL
+
+    STTP Layer
+    
+    SERVER SIDE:
+    1.First create a server folder
+    2.Then in terminal use npm init -y
+    3.Then create a index.js file
+    4.Go to express js website and install express using npm install express --save
+    5.Copy the code in express js website and paste in index.js and do some changes
+    <img src="./images/server1.png" alt="">
+    6.nodemon (it is used so that we donot repeatedly close and open te server everytime we do a change)  ---> install using npm install -g nodemon (this is global so installing it once is enough for each pc)
+    7. To run the server use nodemon index.js
+
+    8.We can create data/api using this server and use this localhost in other folders while it's running
+    <img src="./images/server2.png" alt="">
+
+    For POST ---
+     posting might be a problem so install cors using npm install cors on the SERVER SIDE
+which can be got from express js ---> resources -->middleware
+    In index.js of server folder
+    <img src="./images/server3.png" alt="">
+    In client folder
+    <img src="./images/client1.png" alt="">
+
+    TO ADD MONGODB---
+    1.Make the express server (1 to 7 step of server side)
+    2.Go to MongoDB atlat ---> cluster --->connect ----> driver ----> select view full code (make sure mongodb is installed) and paste it like this--
+    <img src="./images/cruds1.png" alt="">
+    3.Go to browse collection, click on the + on the cluster then add data ---> get json format mongobd data/api from chatgpt or gemini and paste there then insert
+    4. according mongodb doc ---> client libraries ---> node.js ----> select js ---->CRUD operations ---> query documents ----> find documents
+    5.Then we must --- <img src="./images/cruds2.png" alt="">
+
+    On the Client Side,
+    For GET-ting API we need to make a lib folder in app and inside the lib folder make data.js file--
+    <img src="./images/crud-client1.png" alt="">
+    Then we can use it any route like this---
+    <img src="./images/crud-client2.png" alt="">
+
+    User Details:
+    To get user Details as usual we will create a [userId] folder in user folder. And in that [userid] folder's page.jsx we will use params. Now, in data.js---
+    <img src="./images/crud-client-details1.png" alt="">
+    In Server side's index.js have these---
+    <img src="./images/cruds-details.png" alt="">
+
+    User Delete:
+    In Server side's index.js have this ---
+    <img src="./images/cruds-delete.png" alt="">
+   
+</body>
+</html>
